@@ -93,8 +93,8 @@ pip install virtualenv
 Create a project directory:
 
 ```bash
-mkdir copilot\project1
-cd copilot\project1
+mkdir copilot\copilot-companion/projects/expense-tracker/java-spring-boot
+cd copilot\copilot-companion/projects/expense-tracker/java-spring-boot
 ```
 
 Create a virtual environment:

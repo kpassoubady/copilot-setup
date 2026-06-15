@@ -81,25 +81,9 @@ Note: The course emphasizes Copilot workflows over specific framework training.
 
 ## 🧩 Track Setup (Install Guides)
 
-Install prerequisites for your chosen track before class:
+Install prerequisites for your chosen track before class by referring to the main installation guide:
 
-- **Java Track** (Spring Boot Task Manager)
-  - Windows: [proj1-install-win.md](../java/proj1-install-win.md)
-  - macOS: [proj1-install-mac.md](../java/proj1-install-mac.md)
-
-- **Python Track** (FastAPI Task Manager)
-  - Windows: [proj2-install-win.md](../python/proj2-install-win.md)
-  - macOS: [proj2-install-mac.md](../python/proj2-install-mac.md)
-
-- **.NET Track** (ASP.NET Core Task Manager)
-  - Windows: [proj3-install-win.md](../dotnet/proj3-install-win.md)
-  - macOS: [proj3-install-mac.md](../dotnet/proj3-install-mac.md)
-
-- **Python Data Analysis Track** (Data Analysis Pipeline)
-  - Windows: [proj4-install-win.md](../data-analysis/proj4-install-win.md)
-  - macOS: [proj4-install-mac.md](../data-analysis/proj4-install-mac.md)
-
-All install links in one place: [install.md](../install.md)
+📄 **[Installation Instructions](../install.md)**
 
 ---
 

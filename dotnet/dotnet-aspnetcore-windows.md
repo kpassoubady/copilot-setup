@@ -1,8 +1,8 @@
-# Project 3: ASP.NET Core Task Manager Installation Guide (Windows)
+# Project 3: ASP.NET Core Personal Expense Tracker Installation Guide (Windows)
 
 <!-- markdownlint-disable MD033 MD029 MD010-->
 <!-- vscode-markdown-toc -->
-- [Project 3: ASP.NET Core Task Manager Installation Guide (Windows)](#project-3-aspnet-core-task-manager-installation-guide-windows)
+- [Project 3: ASP.NET Core Personal Expense Tracker Installation Guide (Windows)](#project-3-aspnet-core-expense-tracker-app-installation-guide-windows)
   - [1. Step 1: Install .NET SDK](#1-step-1-install-net-sdk)
     - [1.1. Option A: Using winget (Recommended)](#11-option-a-using-winget-recommended)
     - [1.2. Option B: Manual Download](#12-option-b-manual-download)
@@ -123,7 +123,7 @@ If you cloned this repo, use the provided project:
 
 ```powershell
 # Navigate to the project directory
-cd project3\task-manager
+cd copilot-companion\projects\expense-tracker\dotnet-aspnetcore\expense-tracker-app
 
 # Restore dependencies
 dotnet restore
@@ -132,11 +132,11 @@ dotnet restore
 dotnet build
 
 # Create database migrations
-dotnet ef migrations add InitialCreate --project src/TaskManager.Web
-dotnet ef database update --project src/TaskManager.Web
+dotnet ef migrations add InitialCreate --project src/ExpenseTracker.Web
+dotnet ef database update --project src/ExpenseTracker.Web
 
 # Run the application
-dotnet run --project src/TaskManager.Web
+dotnet run --project src/ExpenseTracker.Web
 
 # Open http://localhost:5000 or https://localhost:5001
 ```
@@ -146,16 +146,16 @@ dotnet run --project src/TaskManager.Web
 Create the project directory and solution:
 
 ```powershell
-mkdir project3
-cd project3
+mkdir copilot-companion/projects/expense-tracker/dotnet-aspnetcore
+cd copilot-companion/projects/expense-tracker/dotnet-aspnetcore
 
 # Create solution and project
-dotnet new sln -n TaskManager
-dotnet new webapp -n TaskManager.Web -o src\TaskManager.Web
-dotnet sln add src\TaskManager.Web
+dotnet new sln -n ExpenseTracker
+dotnet new webapp -n ExpenseTracker.Web -o src\ExpenseTracker.Web
+dotnet sln add src\ExpenseTracker.Web
 
 # Navigate to project
-cd src\TaskManager.Web
+cd src\ExpenseTracker.Web
 ```
 
 ### 4.3. <a name='InstallNuGetPackages'></a>Install NuGet Packages
@@ -188,7 +188,7 @@ Build and run the application:
 dotnet build
 
 # Run the application
-dotnet run --project src/TaskManager.Web
+dotnet run --project src/ExpenseTracker.Web
 
 # Application should start on:
 # - HTTP:  http://localhost:5000
@@ -269,7 +269,7 @@ Update `appsettings.json`:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Data Source=taskmanager.db"
+    "DefaultConnection": "Data Source=expensetracker.db"
   },
   "Logging": {
     "LogLevel": {
@@ -308,7 +308,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 9.0.0
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=TaskManager;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=ExpenseTracker;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
 }
 ```
@@ -331,12 +331,12 @@ git --version
 Write-Host "✓ Git OK" -ForegroundColor Green
 
 # Test project compilation
-cd project3\task-manager
+cd copilot-companion\projects\expense-tracker\dotnet-aspnetcore\expense-tracker-app
 dotnet build
 Write-Host "✓ Build OK" -ForegroundColor Green
 
 # Run application (Ctrl+C to stop)
-dotnet run --project src/TaskManager.Web
+dotnet run --project src/ExpenseTracker.Web
 ```
 
 Expected access points after starting:
@@ -426,6 +426,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 After completing setup:
 
-1. Open the project in VS Code: `code project3\task-manager`
+1. Open the project in VS Code: `code copilot-companion\projects\expense-tracker\dotnet-aspnetcore\expense-tracker-app`
 2. Verify GitHub Copilot is working
-3. Start building the Task Manager application!
+3. Start building the Personal Expense Tracker application!

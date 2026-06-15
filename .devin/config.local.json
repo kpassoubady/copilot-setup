@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(*)",
+      "Write(*)",
+      "Exec(*)",
+      "Exec(!rm*)",
+      "Exec(!rmdir*)"
+    ]
+  }
+}
