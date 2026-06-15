@@ -1,8 +1,9 @@
 # Project 1: Spring Boot Personal Expense Tracker Installation Guide (macOS)
 
 <!-- markdownlint-disable MD033 MD029 MD010-->
-<!-- vscode-markdown-toc -->
-- [Project 1: Spring Boot Personal Expense Tracker Installation Guide (macOS)](#project-1-spring-boot-expense-tracker-app-installation-guide-macos)
+<!-- TOC -->
+
+- [Project 1: Spring Boot Personal Expense Tracker Installation Guide (macOS)](#project-1-spring-boot-personal-expense-tracker-installation-guide-macos)
   - [1. Step 1: Install Java Development Kit (JDK)](#1-step-1-install-java-development-kit-jdk)
     - [1.1. Setup JAVA\_HOME](#11-setup-java_home)
   - [2. Step 2: Install Maven](#2-step-2-install-maven)
@@ -20,6 +21,13 @@
     - [6.2. PostgreSQL (Optional)](#62-postgresql-optional)
   - [7. Verification](#7-verification)
   - [8. Troubleshooting](#8-troubleshooting)
+    - [Common Issues and Solutions](#common-issues-and-solutions)
+    - [Verification Commands](#verification-commands)
+    - [Technology Stack Summary](#technology-stack-summary)
+    - [Note](#note)
+
+<!-- /TOC -->
+
 
 <!-- vscode-markdown-toc-config
 	numbering=true

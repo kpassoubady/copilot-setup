@@ -1,4 +1,16 @@
-# Project 2: Python Personal Expense Tracker (FastAPI) — macOS Install
+# Project 2: Python Personal Expense Tracker (FastAPI): macOS Install
+
+<!-- TOC -->
+
+- [Project 2: Python Personal Expense Tracker FastAPI: macOS Install](#project-2-python-personal-expense-tracker-fastapi-macos-install)
+    - [Prerequisites](#prerequisites)
+    - [Recommended: use the included starter](#recommended-use-the-included-starter)
+    - [Alternatively: scaffold manually](#alternatively-scaffold-manually)
+    - [VS Code extensions](#vs-code-extensions)
+    - [Running Tests Optional](#running-tests-optional)
+    - [Database URLs SQLAlchemy](#database-urls-sqlalchemy)
+
+<!-- /TOC -->
 
 This guide sets up a minimal FastAPI app with Jinja2 templates and SQLite on macOS.
 

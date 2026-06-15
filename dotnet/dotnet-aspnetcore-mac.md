@@ -1,33 +1,38 @@
 # Project 3: ASP.NET Core Personal Expense Tracker Installation Guide (macOS)
 
 <!-- markdownlint-disable MD033 MD029 MD010-->
-<!-- vscode-markdown-toc -->
-- [Project 3: ASP.NET Core Personal Expense Tracker Installation Guide (macOS)](#project-3-aspnet-core-expense-tracker-app-installation-guide-macos)
-  - [1. Step 1: Install .NET SDK](#1-step-1-install-net-sdk)
-    - [1.1. Verify Installation](#11-verify-installation)
-  - [2. Step 2: Install Entity Framework Core Tools](#2-step-2-install-entity-framework-core-tools)
-  - [3. Step 3: Install Git](#3-step-3-install-git)
-  - [4. Project Setup](#4-project-setup)
-    - [4.1. Quick Start (Recommended)](#41-quick-start-recommended)
-    - [4.2. Create ASP.NET Core Project from Scratch](#42-create-aspnet-core-project-from-scratch)
-    - [4.3. Install NuGet Packages](#43-install-nuget-packages)
-    - [4.4. Test Project Setup](#44-test-project-setup)
-  - [5. IDE Setup](#5-ide-setup)
-    - [5.1. Visual Studio Code Extensions](#51-visual-studio-code-extensions)
-    - [5.2. Visual Studio for Mac (Alternative)](#52-visual-studio-for-mac-alternative)
-  - [6. Database Setup](#6-database-setup)
-    - [6.1. SQLite Database (Default)](#61-sqlite-database-default)
-    - [6.2. SQL Server (Optional)](#62-sql-server-optional)
-  - [7. Verification](#7-verification)
-  - [8. Troubleshooting](#8-troubleshooting)
+<!-- TOC -->
 
+- [Project 3: ASP.NET Core Personal Expense Tracker Installation Guide macOS](#project-3-aspnet-core-personal-expense-tracker-installation-guide-macos)
+    - [Step 1: Install .NET SDKTSDK'>Step 1: Install .NET SDK](#step-1-install-net-sdktsdkstep-1-install-net-sdk)
+        - [Verify Installationallation'>Verify Installation](#verify-installationallationverify-installation)
+    - [Step 2: Install Entity Framework Core Toolsols'>Step 2: Install Entity Framework Core Tools](#step-2-install-entity-framework-core-toolsolsstep-2-install-entity-framework-core-tools)
+    - [Step 3: Install GitallGit'>Step 3: Install Git](#step-3-install-gitallgitstep-3-install-git)
+    - [Project SetupectSetup'>Project Setup](#project-setupectsetupproject-setup)
+        - [Quick Start Recommendedended'>Quick Start Recommended](#quick-start-recommendedendedquick-start-recommended)
+        - [Create ASP.NET Core Project from Scratchtch'>Create ASP.NET Core Project from Scratch](#create-aspnet-core-project-from-scratchtchcreate-aspnet-core-project-from-scratch)
+        - [Install NuGet Packagesackages'>Install NuGet Packages](#install-nuget-packagesackagesinstall-nuget-packages)
+        - [Test Project SetupctSetup'>Test Project Setup](#test-project-setupctsetuptest-project-setup)
+    - [IDE SetupIDESetup'>IDE Setup](#ide-setupidesetupide-setup)
+        - [Visual Studio Code Extensionsnsions'>Visual Studio Code Extensions](#visual-studio-code-extensionsnsionsvisual-studio-code-extensions)
+        - [Visual Studio for Mac Alternativeive'>Visual Studio for Mac Alternative](#visual-studio-for-mac-alternativeivevisual-studio-for-mac-alternative)
+    - [Database SetupaseSetup'>Database Setup](#database-setupasesetupdatabase-setup)
+        - [SQLite Database Defaultfault'>SQLite Database Default](#sqlite-database-defaultfaultsqlite-database-default)
+        - [SQL Server Optionalional'>SQL Server Optional](#sql-server-optionalionalsql-server-optional)
+    - [Verificationification'>Verification](#verificationificationverification)
+    - [Troubleshootingeshooting'>Troubleshooting](#troubleshootingeshootingtroubleshooting)
+        - [Common Issues and Solutions](#common-issues-and-solutions)
+        - [Technology Stack Summary](#technology-stack-summary)
+        - [Next Steps](#next-steps)
+
+<!-- /TOC -->
 <!-- vscode-markdown-toc-config
 	numbering=true
 	autoSave=true
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-## 1. <a name='Step1:InstallNETSDK'></a>Step 1: Install .NET SDK
+## Step 1: Install .NET SDKTSDK'></a>Step 1: Install .NET SDK
 
 Install .NET 9+ SDK using Homebrew:
 
@@ -37,7 +42,7 @@ brew install --cask dotnet-sdk
 
 Alternatively, download from [Microsoft .NET Downloads](https://dotnet.microsoft.com/download/dotnet/9.0).
 
-### 1.1. <a name='VerifyInstallation'></a>Verify Installation
+### Verify Installationallation'></a>Verify Installation
 
 ```bash
 dotnet --version
@@ -54,7 +59,7 @@ echo 'export PATH="$PATH:$HOME/.dotnet/tools"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-## 2. <a name='Step2:InstallEntityFrameworkCoreTools'></a>Step 2: Install Entity Framework Core Tools
+## Step 2: Install Entity Framework Core Toolsols'></a>Step 2: Install Entity Framework Core Tools
 
 Install EF Core CLI tools globally:
 
@@ -75,7 +80,7 @@ dotnet ef --version
 # Expected: Entity Framework Core .NET Command-line Tools 9.x.x
 ```
 
-## 3. <a name='Step3:InstallGit'></a>Step 3: Install Git
+## Step 3: Install GitallGit'></a>Step 3: Install Git
 
 Install Git using Homebrew:
 
@@ -96,9 +101,9 @@ Verify Git installation:
 git --version
 ```
 
-## 4. <a name='ProjectSetup'></a>Project Setup
+## Project SetupectSetup'></a>Project Setup
 
-### 4.1. <a name='QuickStartRecommended'></a>Quick Start (Recommended)
+### Quick Start (Recommended)ended'></a>Quick Start (Recommended)
 
 If you cloned this repo, use the provided project:
 
@@ -122,7 +127,7 @@ dotnet run --project src/ExpenseTracker.Web
 # Open http://localhost:5000 or https://localhost:5001
 ```
 
-### 4.2. <a name='CreateASPNETCoreProjectfromScratch'></a>Create ASP.NET Core Project from Scratch
+### Create ASP.NET Core Project from Scratchtch'></a>Create ASP.NET Core Project from Scratch
 
 Create the project directory and solution:
 
@@ -139,7 +144,7 @@ dotnet sln add src/ExpenseTracker.Web
 cd src/ExpenseTracker.Web
 ```
 
-### 4.3. <a name='InstallNuGetPackages'></a>Install NuGet Packages
+### Install NuGet Packagesackages'></a>Install NuGet Packages
 
 ```bash
 # Entity Framework Core with SQLite
@@ -160,7 +165,7 @@ Verify packages installed:
 dotnet list package
 ```
 
-### 4.4. <a name='TestProjectSetup'></a>Test Project Setup
+### Test Project SetupctSetup'></a>Test Project Setup
 
 Build and run the application:
 
@@ -185,9 +190,9 @@ curl http://localhost:5000/health
 
 Stop the application with `Ctrl+C`.
 
-## 5. <a name='IDESetup'></a>IDE Setup
+## IDE SetupIDESetup'></a>IDE Setup
 
-### 5.1. <a name='VisualStudioCodeExtensions'></a>Visual Studio Code Extensions
+### Visual Studio Code Extensionsnsions'></a>Visual Studio Code Extensions
 
 Install recommended VS Code extensions:
 
@@ -215,7 +220,7 @@ Alternatively, install via VS Code marketplace:
 3. **REST Client** - API testing within VS Code
 4. **NuGet Gallery** - Package management
 
-### 5.2. <a name='VisualStudioforMacAlternative'></a>Visual Studio for Mac (Alternative)
+### Visual Studio for Mac (Alternative)ive'></a>Visual Studio for Mac (Alternative)
 
 If using Visual Studio for Mac:
 
@@ -223,9 +228,9 @@ If using Visual Studio for Mac:
 2. Install with ASP.NET and web development workload
 3. Install GitHub Copilot extension from Extensions Manager
 
-## 6. <a name='DatabaseSetup'></a>Database Setup
+## Database SetupaseSetup'></a>Database Setup
 
-### 6.1. <a name='SQLiteDatabaseDefault'></a>SQLite Database (Default)
+### SQLite Database (Default)fault'></a>SQLite Database (Default)
 
 SQLite is configured by default. No additional setup required.
 
@@ -256,7 +261,7 @@ Add to `.gitignore`:
 *.db-wal
 ```
 
-### 6.2. <a name='SQLServerOptional'></a>SQL Server (Optional)
+### SQL Server (Optional)ional'></a>SQL Server (Optional)
 
 For SQL Server (using Docker):
 
@@ -283,7 +288,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 9.0.0
 }
 ```
 
-## 7. <a name='Verification'></a>Verification
+## Verificationification'></a>Verification
 
 Run these commands to verify your setup:
 
@@ -311,7 +316,7 @@ Expected access points after starting:
 - **Swagger UI**: https://localhost:5001/swagger
 - **Health Check**: http://localhost:5000/health
 
-## 8. <a name='Troubleshooting'></a>Troubleshooting
+## Troubleshootingeshooting'></a>Troubleshooting
 
 ### Common Issues and Solutions
 

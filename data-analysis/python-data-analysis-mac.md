@@ -1,35 +1,36 @@
 # Project 4: Data Analysis Pipeline with Python and Pandas (macOS)
 
 <!-- markdownlint-disable MD033 MD029 MD010 MD007-->
-<!-- vscode-markdown-toc -->
-- [Project 4: Data Analysis Pipeline with Python and Pandas (macOS)](#project-4-data-analysis-pipeline-with-python-and-pandas-macos)
-	- [1. MacOS Install Guide](#1-macos-install-guide)
-		- [1.1. Validate Homebrew installed](#11-validate-homebrew-installed)
-		- [1.2. Install Python](#12-install-python)
-			- [1.2.1. Install Python using Homebrew](#121-install-python-using-homebrew)
-			- [1.2.2. Verify the Python installation](#122-verify-the-python-installation)
-			- [1.2.3. Install pip (Python package manager)](#123-install-pip-python-package-manager)
-			- [1.2.4. Verify pip3 version](#124-verify-pip3-version)
-		- [1.3. Set Up a Virtual Environment](#13-set-up-a-virtual-environment)
-			- [1.3.1. Install virtualenv](#131-install-virtualenv)
-	- [2. Project Setup](#2-project-setup)
-		- [2.1. Install Required Python Libraries](#21-install-required-python-libraries)
-		- [2.2. Install Jupyter Notebook](#22-install-jupyter-notebook)
-		- [2.3. Test the Setup](#23-test-the-setup)
-	- [3. Jupyter Password Creation](#3-jupyter-password-creation)
-		- [3.1. Set the password](#31-set-the-password)
-		- [3.2. Start Jupyter Notebook](#32-start-jupyter-notebook)
-		- [3.3. Create `notebook.ipynb` File](#33-create-notebookipynb-file)
-		- [3.4. Connect to a Jupyter Server (local)](#34-connect-to-a-jupyter-server-local)
-	- [4. Install VS Code Extensions](#4-install-vs-code-extensions)
-		- [4.1. Useful VSCode Extensions](#41-useful-vscode-extensions)
-	- [5. Additional Notes (Optional)](#5-additional-notes-optional)
-		- [5.1. To shut down Jupyter Notebook](#51-to-shut-down-jupyter-notebook)
-		- [5.2. Notes on Jupyter Kernel Selection](#52-notes-on-jupyter-kernel-selection)
-		- [5.3. GitHub Copilot Extension](#53-github-copilot-extension)
-		- [5.4. Install VS Code in your Shell for Mac](#54-install-vs-code-in-your-shell-for-mac)
-		- [5.5. To create a Jupyter config, follow these steps (optional)](#55-to-create-a-jupyter-config-follow-these-steps-optional)
-	- [Code Runner change python to python3](#code-runner-change-python-to-python3)
+<!-- TOC -->
+
+- [Project 4: Data Analysis Pipeline with Python and Pandas macOS](#project-4-data-analysis-pipeline-with-python-and-pandas-macos)
+    - [MacOS Install GuidellGuide'>MacOS Install Guide](#macos-install-guidellguidemacos-install-guide)
+        - [Validate Homebrew installedstalled'>Validate Homebrew installed](#validate-homebrew-installedstalledvalidate-homebrew-installed)
+        - [Install PythonllPython'>Install Python](#install-pythonllpythoninstall-python)
+            - [Install Python using Homebrewmebrew'>Install Python using Homebrew](#install-python-using-homebrewmebrewinstall-python-using-homebrew)
+            - [Verify the Python installationlation'>Verify the Python installation](#verify-the-python-installationlationverify-the-python-installation)
+            - [Install pip Python package managerger'>Install pip Python package manager](#install-pip-python-package-managergerinstall-pip-python-package-manager)
+            - [Verify pip3 versionversion'>Verify pip3 version](#verify-pip3-versionversionverify-pip3-version)
+        - [Set Up a Virtual Environmentnment'>Set Up a Virtual Environment](#set-up-a-virtual-environmentnmentset-up-a-virtual-environment)
+            - [Install virtualenvrtualenv'>Install virtualenv](#install-virtualenvrtualenvinstall-virtualenv)
+    - [Project SetupectSetup'>Project Setup](#project-setupectsetupproject-setup)
+        - [Install Required Python Librariesraries'>Install Required Python Libraries](#install-required-python-librariesrariesinstall-required-python-libraries)
+        - [Install Jupyter Notebookotebook'>Install Jupyter Notebook](#install-jupyter-notebookotebookinstall-jupyter-notebook)
+        - [Test the SetupheSetup'>Test the Setup](#test-the-setuphesetuptest-the-setup)
+    - [Jupyter Password Creationreation'>Jupyter Password Creation](#jupyter-password-creationreationjupyter-password-creation)
+        - [Set the passwordassword'>Set the password](#set-the-passwordasswordset-the-password)
+        - [Start Jupyter Notebookotebook'>Start Jupyter Notebook](#start-jupyter-notebookotebookstart-jupyter-notebook)
+        - [Create notebook.ipynb FileynbFile'>Create notebook.ipynb File](#create-notebookipynb-fileynbfilecreate-notebookipynb-file)
+        - [Connect to a Jupyter Server localal'>Connect to a Jupyter Server local](#connect-to-a-jupyter-server-localalconnect-to-a-jupyter-server-local)
+    - [Install VS Code Extensionsnsions'>Install VS Code Extensions](#install-vs-code-extensionsnsionsinstall-vs-code-extensions)
+        - [Useful VSCode Extensionsensions'>Useful VSCode Extensions](#useful-vscode-extensionsensionsuseful-vscode-extensions)
+    - [Additional Notes Optionalional'>Additional Notes Optional](#additional-notes-optionalionaladditional-notes-optional)
+        - [To shut down Jupyter Notebookebook'>To shut down Jupyter Notebook](#to-shut-down-jupyter-notebookebookto-shut-down-jupyter-notebook)
+        - [Notes on Jupyter Kernel Selectionction'>Notes on Jupyter Kernel Selection](#notes-on-jupyter-kernel-selectionctionnotes-on-jupyter-kernel-selection)
+        - [GitHub Copilot Extensiontension'>GitHub Copilot Extension](#github-copilot-extensiontensiongithub-copilot-extension)
+        - [Install VS Code in your Shell for Macac'>Install VS Code in your Shell for Mac](#install-vs-code-in-your-shell-for-macacinstall-vs-code-in-your-shell-for-mac)
+        - [To create a Jupyter config, follow these steps optionalTo create a Jupyter config, follow these steps optional](#to-create-a-jupyter-config-follow-these-steps-optionalto-create-a-jupyter-config-follow-these-steps-optional)
+    - [Code Runner change python to python3](#code-runner-change-python-to-python3)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -37,23 +38,23 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-## 1. <a name='MacOSInstallGuide'></a>MacOS Install Guide
+## MacOS Install GuidellGuide'></a>MacOS Install Guide
 
-### 1.1. <a name='ValidateHomebrewinstalled'></a>Validate Homebrew installed
+### Validate Homebrew installedstalled'></a>Validate Homebrew installed
 
 ![img.png](images/img.png)
 
-### 1.2. <a name='InstallPython'></a>Install Python
+### Install PythonllPython'></a>Install Python
 
 Ensure Python 3 is installed (preferably version 3.8 or higher).
 
-#### 1.2.1. <a name='InstallPythonusingHomebrew'></a>Install Python using Homebrew
+#### Install Python using Homebrewmebrew'></a>Install Python using Homebrew
 
 ```bash
 brew install python
 ```
 
-#### 1.2.2. <a name='VerifythePythoninstallation'></a>Verify the Python installation
+#### Verify the Python installationlation'></a>Verify the Python installation
 
 ```bash
 python3 --version
@@ -61,13 +62,13 @@ python3 --version
 
 ![alt text](images/image.png)
 
-#### 1.2.3. <a name='InstallpipPythonpackagemanager'></a>Install pip (Python package manager)
+#### Install pip (Python package manager)ger'></a>Install pip (Python package manager)
 
 ```bash
 python3 -m ensurepip --upgrade
 ```
 
-#### 1.2.4. <a name='Verifypip3version'></a>Verify pip3 version
+#### Verify pip3 versionversion'></a>Verify pip3 version
 
 ```bash
 pip3 --version
@@ -75,11 +76,11 @@ pip3 --version
 
 ![alt text](images/image-1.png)
 
-### 1.3. <a name='SetUpaVirtualEnvironment'></a>Set Up a Virtual Environment
+### Set Up a Virtual Environmentnment'></a>Set Up a Virtual Environment
 
 A virtual environment isolates dependencies for your project.
 
-#### 1.3.1. <a name='Installvirtualenv'></a>Install virtualenv
+#### Install virtualenvrtualenv'></a>Install virtualenv
 
 ```bash
 pip3 install virtualenv
@@ -87,7 +88,7 @@ pip3 install virtualenv
 
 ![img_1.png](images/img_1.png)
 
-## 2. <a name='ProjectSetup'></a>Project Setup
+## Project SetupectSetup'></a>Project Setup
 
 - Create a virtual environment for the project:
 
@@ -105,7 +106,7 @@ python3 -m venv data_pipeline_env
 source data_pipeline_env/bin/activate
 ```
 
-### 2.1. <a name='InstallRequiredPythonLibraries'></a>Install Required Python Libraries
+### Install Required Python Librariesraries'></a>Install Required Python Libraries
 
 Install the libraries needed for the project.
 
@@ -130,7 +131,7 @@ pandas-profiling
 pip3 install -r requirements.txt
 ```
 
-### 2.2. <a name='InstallJupyterNotebook'></a>Install Jupyter Notebook
+### Install Jupyter Notebookotebook'></a>Install Jupyter Notebook
 
 Jupyter Notebook will be used to write and present the summary report.
 
@@ -166,7 +167,7 @@ pip3 list | grep jupyter
 
 ![img_53.png](images/img_53.png)
 
-### 2.3. <a name='TesttheSetup'></a>Test the Setup
+### Test the SetupheSetup'></a>Test the Setup
 
 Create a new Python script to test your environment:
 
@@ -200,9 +201,9 @@ python3 test_pipeline.py
 
 ![img_7.png](images/img_7.png)
 
-## 3. <a name='JupyterPasswordCreation'></a>Jupyter Password Creation
+## Jupyter Password Creationreation'></a>Jupyter Password Creation
 
-### 3.1. <a name='Setthepassword'></a>Set the password
+### Set the passwordassword'></a>Set the password
 
 To create a password for a Jupyter Notebook server, you can use the jupyter notebook password command:
 Run the command
@@ -215,7 +216,7 @@ Enter and confirm your password
 
 The hashed password will be saved in the `jupyter_notebook_config.json` file. You can use this password to log in instead of a token.
 
-### 3.2. <a name='StartJupyterNotebook'></a>Start Jupyter Notebook
+### Start Jupyter Notebookotebook'></a>Start Jupyter Notebook
 
 Launch Jupyter Notebook from the terminal:
 
@@ -226,7 +227,7 @@ jupyter notebook .
 When prompted enter your password.
 ![img_8.png](images/img_8.png)
 
-### 3.3. <a name='Createnotebook.ipynbFile'></a>Create `notebook.ipynb` File
+### Create notebook.ipynb FileynbFile'></a>Create `notebook.ipynb` File
 
 Click Code
 
@@ -238,7 +239,7 @@ Click Run
 
 ![img_10.png](images/img_10.png)
 
-### 3.4. <a name='ConnecttoaJupyterServerlocal'></a>Connect to a Jupyter Server (local)
+### Connect to a Jupyter Server (local)al'></a>Connect to a Jupyter Server (local)
 
 Connect to a Jupyter Server (local)
 To connect to a remote Jupyter server:
@@ -274,9 +275,9 @@ Execute Cell by clicking the Run button in Jupyter Notebook
 
 ![img_18.png](images/img_18.png)
 
-## 4. <a name='InstallVSCodeExtensions'></a>Install VS Code Extensions
+## Install VS Code Extensionsnsions'></a>Install VS Code Extensions
 
-### 4.1. <a name='UsefulVSCodeExtensions'></a>Useful VSCode Extensions
+### Useful VSCode Extensionsensions'></a>Useful VSCode Extensions
 
 - Jupyter
 - Python
@@ -286,26 +287,26 @@ Execute Cell by clicking the Run button in Jupyter Notebook
 - GitHub Copilot Chat
 - Python Analysis Tool (Optional)
 
-## 5. <a name='AdditionalNotesOptional'></a>Additional Notes (Optional)
+## Additional Notes (Optional)ional'></a>Additional Notes (Optional)
 
-### 5.1. <a name='ToshutdownJupyterNotebook'></a>To shut down Jupyter Notebook
+### To shut down Jupyter Notebookebook'></a>To shut down Jupyter Notebook
 
 Press Ctrl+S
 Shut down this Jupyter server (y/[n])? Y
 
-### 5.2. <a name='NotesonJupyterKernelSelection'></a>Notes on Jupyter Kernel Selection
+### Notes on Jupyter Kernel Selectionction'></a>Notes on Jupyter Kernel Selection
 
 1. Activate your venv
 2. Install ipykernel if needed
 3. Select the Python3 ipykernel within VSCode
 
-### 5.3. <a name='GitHubCopilotExtension'></a>GitHub Copilot Extension
+### GitHub Copilot Extensiontension'></a>GitHub Copilot Extension
 
 - Open VSCode and go to the Extensions view (Cmd+Shift+X).
 - Search for GitHub Copilot and install the extension.
 - Authenticate your GitHub account to enable Copilot.
 
-### 5.4. <a name='InstallVSCodeinyourShellforMac'></a>Install VS Code in your Shell for Mac
+### Install VS Code in your Shell for Macac'></a>Install VS Code in your Shell for Mac
 
 - Go to the top of VS and select menu View → Command Palette...
 - Open the Command Palette via ⌘⇧P and type the shell command to find the Shell Command:
@@ -314,7 +315,7 @@ Shut down this Jupyter server (y/[n])? Y
 Shell Command: Install `code` command in PATH
 ```
 
-### 5.5. <a name='TocreateaJupyterconfigfollowthesestepsoptional'></a>To create a Jupyter config, follow these steps (optional)
+### To create a Jupyter config, follow these steps (optional)</a>To create a Jupyter config, follow these steps (optional)
 
 1. Open a terminal.
 2. Run the following command to generate a Jupyter configuration file:

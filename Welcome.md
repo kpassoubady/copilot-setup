@@ -2,17 +2,15 @@
 
 To ensure a smooth and productive learning experience, please complete the setup before class.
 
----
 
 ## 📋 Course Overview
 
-Review the course outline and schedule here: 📄 [Course Catalog - GitHub Copilot 1-Day](catalog/github-copilot-1-day.md)
+Review the course outline and schedule here: 📄 [Course Catalog - GitHub Copilot 1-Day](https://github.com/kpassoubady/copilot-setup/blob/main/catalog/github-copilot-1-day.md)
 
----
 
 ## 🛠️ Pre-Class Setup (Required)
 
-Please complete the installation for your chosen track before the training session: 📄 [Installation Instructions](install.md)
+Please complete the installation for your chosen track before the training session: 📄 [Installation Instructions](https://github.com/kpassoubady/copilot-setup/blob/main/install.md)
 
 **Choose your track:**
 
@@ -25,7 +23,6 @@ Please complete the installation for your chosen track before the training sessi
 
 The installation guide includes OS-specific instructions for both **Windows** and **macOS**.
 
----
 
 ## ✅ Checklist Before Class
 
@@ -41,25 +38,23 @@ The installation guide includes OS-specific instructions for both **Windows** an
 | .NET          | .NET 9+ SDK              |
 | Data Analysis | Python 3.9+ with Jupyter |
 
----
 
 ## 📚 Quick Links
 
 | Resource              | Link                                                                                                   |
 | --------------------- | ------------------------------------------------------------------------------------------------------ |
-| Course Catalog        | [GitHub Copilot 1-Day](catalog/github-copilot-1-day.md)                                               |
-| Installation Guide    | [install.md](install.md)                                                                               |
-| Java Track Install    | [macOS](java/java-spring-boot-mac.md) \| [Windows](java/java-spring-boot-windows.md)                   |
-| Python Track Install  | [macOS](python/python-fastapi-mac.md) \| [Windows](python/python-fastapi-windows.md)                   |
-| .NET Track Install    | [macOS](dotnet/dotnet-aspnetcore-mac.md) \| [Windows](dotnet/dotnet-aspnetcore-windows.md)             |
-| Data Analysis Install | [macOS](data-analysis/python-data-analysis-mac.md) \| [Windows](data-analysis/python-data-analysis-windows.md) |
+| Course Catalog        | [GitHub Copilot 1-Day](https://github.com/kpassoubady/copilot-setup/blob/main/catalog/github-copilot-1-day.md)                                               |
+| Installation Guide    | [install.md](https://github.com/kpassoubady/copilot-setup/blob/main/install.md)                                                                               |
+| General Setup         | [macOS](https://github.com/kpassoubady/copilot-setup/blob/main/generic-install-mac.md) \| [Windows](https://github.com/kpassoubady/copilot-setup/blob/main/generic-install-win.md) |
+| Java Track Install    | [macOS](https://github.com/kpassoubady/copilot-setup/blob/main/java/java-spring-boot-mac.md) \| [Windows](https://github.com/kpassoubady/copilot-setup/blob/main/java/java-spring-boot-windows.md)                   |
+| Python Track Install  | [macOS](https://github.com/kpassoubady/copilot-setup/blob/main/python/python-fastapi-mac.md) \| [Windows](https://github.com/kpassoubady/copilot-setup/blob/main/python/python-fastapi-windows.md)                   |
+| .NET Track Install    | [macOS](https://github.com/kpassoubady/copilot-setup/blob/main/dotnet/dotnet-aspnetcore-mac.md) \| [Windows](https://github.com/kpassoubady/copilot-setup/blob/main/dotnet/dotnet-aspnetcore-windows.md)             |
+| Data Analysis Install | [macOS](https://github.com/kpassoubady/copilot-setup/blob/main/data-analysis/python-data-analysis-mac.md) \| [Windows](https://github.com/kpassoubady/copilot-setup/blob/main/data-analysis/python-data-analysis-windows.md) |
 
----
 
 ## 🆘 Need Help?
 
 If you encounter any issues during setup, please don't hesitate to reach out before the training day.
 
----
 
 **Looking forward to seeing you in class!** 🚀

@@ -1,8 +1,7 @@
-# General Setup — Windows
+# General Setup: Windows
 
 This guide walks through the general development environment setup on Windows 10/11 for this GitHub Copilot course, focusing on Git, Visual Studio Code (VSC), and GitHub Copilot. If you prefer to use IntelliJ IDEA, instructions are also provided.
 
----
 
 ## 1. Install Git
 
@@ -21,7 +20,6 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
----
 
 ## 2. Install Visual Studio Code (Recommended)
 
@@ -38,14 +36,12 @@ Verify:
 code --version
 ```
 
----
 
 ## 3. Install IntelliJ IDEA (Alternative)
 
 If you prefer using JetBrains IDEs:
 Download IntelliJ IDEA (Community or Ultimate) from <https://www.jetbrains.com/idea/download/> and install it.
 
----
 
 ## 4. GitHub Copilot Setup
 
@@ -59,7 +55,7 @@ code --install-extension GitHub.copilot-chat
 ```
 
 - Sign in with your GitHub account that has an active Copilot license.
-- Verify: open VS Code, type a comment in a file — Copilot should suggest completions.
+- Verify: open VS Code, type a comment in a file. Copilot should suggest completions.
 
 ### Option B: IntelliJ IDEA
 
@@ -70,6 +66,5 @@ code --install-extension GitHub.copilot-chat
 5. Click **Install** and restart the IDE if prompted.
 6. Click the GitHub Copilot icon in the status bar or tool window to sign in to your GitHub account.
 
----
 
 > **Next Steps:** Once your general environment is set up, proceed to the track-specific installation guide for your chosen project language (Java, Python, .NET, etc.) from the main installation page.
