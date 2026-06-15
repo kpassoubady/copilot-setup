@@ -5,7 +5,11 @@
       "Write(*)",
       "Exec(*)",
       "Exec(!rm*)",
-      "Exec(!rmdir*)"
+      "Exec(!rmdir*)",
+      "Exec(git status)",
+      "Exec(git diff)",
+      "Exec(git log)",
+      "Exec(git add)"
     ]
   }
 }

@@ -1,4 +1,17 @@
-# Project 2: Python Personal Expense Tracker (FastAPI) — Windows Install
+# Project 2: Python Personal Expense Tracker (FastAPI): Windows Install
+
+<!-- TOC -->
+
+- [Project 2: Python Personal Expense Tracker FastAPI: Windows Install](#project-2-python-personal-expense-tracker-fastapi-windows-install)
+    - [Install Python and verify](#install-python-and-verify)
+    - [Recommended: use the included starter](#recommended-use-the-included-starter)
+    - [Alternatively: scaffold manually](#alternatively-scaffold-manually)
+    - [Run the dev server](#run-the-dev-server)
+    - [VS Code extensions](#vs-code-extensions)
+    - [Running Tests Optional](#running-tests-optional)
+    - [Database URLs SQLAlchemy](#database-urls-sqlalchemy)
+
+<!-- /TOC -->
 
 This guide sets up a minimal FastAPI app with Jinja2 templates and SQLite on Windows 11.
 ## 1. Install Python and verify

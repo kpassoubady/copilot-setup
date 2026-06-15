@@ -6,10 +6,9 @@ This document provides the installation instructions for all projects in this Gi
 
 Before starting your track-specific installation, please ensure you have installed Git, your preferred IDE (Visual Studio Code or IntelliJ IDEA), and GitHub Copilot. Click on the link for your operating system to view the detailed setup guide:
 
-- [General Setup — macOS](./generic-install-mac.md)
-- [General Setup — Windows](./generic-install-win.md)
+- [General Setup: macOS](./generic-install-mac.md)
+- [General Setup: Windows](./generic-install-win.md)
 
----
 
 ## Track-Specific Setup
 

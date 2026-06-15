@@ -2,30 +2,32 @@
 
 <!-- markdownlint-disable MD033 MD029-->
 
-<!-- vscode-markdown-toc -->
-- [Project 4: Data Analysis Pipeline with Python and Pandas (Windows 11)](#project-4-data-analysis-pipeline-with-python-and-pandas-windows-11)
-  - [1. 1. Install Python (on Windows)](#1-1-install-python-on-windows)
-  - [2. Verify the Python Installation](#2-verify-the-python-installation)
-  - [3. 1.3. Upgrade pip (Optional)](#3-13-upgrade-pip-optional)
-  - [4. 2. Set Up a Virtual Environment](#4-2-set-up-a-virtual-environment)
-    - [4.1. 2.1. Install virtualenv](#41-21-install-virtualenv)
-    - [4.2. 3. Install Required Python Libraries](#42-3-install-required-python-libraries)
-    - [4.3. 4. Install Jupyter Notebook](#43-4-install-jupyter-notebook)
-    - [4.4. 5. Test the Setup](#44-5-test-the-setup)
-    - [4.5. 6. Start Jupyter Notebook](#45-6-start-jupyter-notebook)
-    - [4.6. 7. Install and Configure Visual Studio Code Extensions](#46-7-install-and-configure-visual-studio-code-extensions)
-  - [5. Notes on Jupyter Kernel Selection](#5-notes-on-jupyter-kernel-selection)
-    - [5.1. Notes on Jupyter Kernel Selection](#51-notes-on-jupyter-kernel-selection)
-  - [6. Jupyter Password Creation](#6-jupyter-password-creation)
-    - [6.1. Set the password](#61-set-the-password)
-    - [6.2. Connect to a Jupyter Server (local)](#62-connect-to-a-jupyter-server-local)
-  - [7. Additional Notes (Optional)](#7-additional-notes-optional)
-    - [7.1. To shut down Jupyter Notebook](#71-to-shut-down-jupyter-notebook)
-    - [7.2. Notes on Jupyter Kernel Selection](#72-notes-on-jupyter-kernel-selection)
-    - [7.3. GitHub Copilot Extension](#73-github-copilot-extension)
-    - [7.4. Install VS Code in your Shell for Mac](#74-install-vs-code-in-your-shell-for-mac)
-    - [7.5. To create a Jupyter config, follow these steps (optional)](#75-to-create-a-jupyter-config-follow-these-steps-optional)
+<!-- TOC -->
 
+- [Project 4: Data Analysis Pipeline with Python and Pandas Windows 11](#project-4-data-analysis-pipeline-with-python-and-pandas-windows-11)
+    - [1. Install Python on Windows](#1-install-python-on-windows)
+    - [Verify the Python Installation](#verify-the-python-installation)
+    - [1.3. Upgrade pip Optional](#13-upgrade-pip-optional)
+    - [2. Set Up a Virtual Environment](#2-set-up-a-virtual-environment)
+        - [2.1. Install virtualenv](#21-install-virtualenv)
+        - [3. Install Required Python Libraries](#3-install-required-python-libraries)
+        - [4. Install Jupyter Notebook](#4-install-jupyter-notebook)
+        - [5. Test the Setup](#5-test-the-setup)
+        - [6. Start Jupyter Notebook](#6-start-jupyter-notebook)
+        - [7. Install and Configure Visual Studio Code Extensions](#7-install-and-configure-visual-studio-code-extensions)
+    - [Notes on Jupyter Kernel Selection](#notes-on-jupyter-kernel-selection)
+        - [Notes on Jupyter Kernel Selection](#notes-on-jupyter-kernel-selection)
+    - [Jupyter Password Creation](#jupyter-password-creation)
+        - [Set the password](#set-the-password)
+        - [Connect to a Jupyter Server local](#connect-to-a-jupyter-server-local)
+    - [Additional Notes Optional](#additional-notes-optional)
+        - [To shut down Jupyter Notebook](#to-shut-down-jupyter-notebook)
+        - [Notes on Jupyter Kernel Selection](#notes-on-jupyter-kernel-selection)
+        - [GitHub Copilot Extension](#github-copilot-extension)
+        - [Install VS Code in your Shell for Mac](#install-vs-code-in-your-shell-for-mac)
+        - [To create a Jupyter config, follow these steps optional](#to-create-a-jupyter-config-follow-these-steps-optional)
+
+<!-- /TOC -->
 <!-- vscode-markdown-toc-config
 	numbering=true
 	autoSave=true

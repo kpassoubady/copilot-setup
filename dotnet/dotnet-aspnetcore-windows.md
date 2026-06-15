@@ -1,27 +1,37 @@
 # Project 3: ASP.NET Core Personal Expense Tracker Installation Guide (Windows)
 
 <!-- markdownlint-disable MD033 MD029 MD010-->
-<!-- vscode-markdown-toc -->
-- [Project 3: ASP.NET Core Personal Expense Tracker Installation Guide (Windows)](#project-3-aspnet-core-expense-tracker-app-installation-guide-windows)
-  - [1. Step 1: Install .NET SDK](#1-step-1-install-net-sdk)
-    - [1.1. Option A: Using winget (Recommended)](#11-option-a-using-winget-recommended)
-    - [1.2. Option B: Manual Download](#12-option-b-manual-download)
-    - [1.3. Verify Installation](#13-verify-installation)
-  - [2. Step 2: Install Entity Framework Core Tools](#2-step-2-install-entity-framework-core-tools)
-  - [3. Step 3: Install Git](#3-step-3-install-git)
-  - [4. Project Setup](#4-project-setup)
-    - [4.1. Quick Start (Recommended)](#41-quick-start-recommended)
-    - [4.2. Create ASP.NET Core Project from Scratch](#42-create-aspnet-core-project-from-scratch)
-    - [4.3. Install NuGet Packages](#43-install-nuget-packages)
-    - [4.4. Test Project Setup](#44-test-project-setup)
-  - [5. IDE Setup](#5-ide-setup)
-    - [5.1. Visual Studio Code Extensions](#51-visual-studio-code-extensions)
-    - [5.2. Visual Studio 2022 (Alternative)](#52-visual-studio-2022-alternative)
-  - [6. Database Setup](#6-database-setup)
-    - [6.1. SQLite Database (Default)](#61-sqlite-database-default)
-    - [6.2. SQL Server LocalDB (Optional)](#62-sql-server-localdb-optional)
-  - [7. Verification](#7-verification)
-  - [8. Troubleshooting](#8-troubleshooting)
+<!-- TOC -->
+
+- [Project 3: ASP.NET Core Personal Expense Tracker Installation Guide Windows](#project-3-aspnet-core-personal-expense-tracker-installation-guide-windows)
+    - [Step 1: Install .NET SDK](#step-1-install-net-sdk)
+        - [Option A: Using winget Recommended](#option-a-using-winget-recommended)
+        - [Option B: Manual Download](#option-b-manual-download)
+        - [Verify Installation](#verify-installation)
+    - [Step 2: Install Entity Framework Core Tools](#step-2-install-entity-framework-core-tools)
+    - [Step 3: Install Git](#step-3-install-git)
+        - [Using winget](#using-winget)
+        - [Manual Download](#manual-download)
+        - [Configure Git](#configure-git)
+    - [Project Setup](#project-setup)
+        - [Quick Start Recommended](#quick-start-recommended)
+        - [Create ASP.NET Core Project from Scratch](#create-aspnet-core-project-from-scratch)
+        - [Install NuGet Packages](#install-nuget-packages)
+        - [Test Project Setup](#test-project-setup)
+    - [IDE Setup](#ide-setup)
+        - [Visual Studio Code Extensions](#visual-studio-code-extensions)
+        - [Visual Studio 2022 Alternative](#visual-studio-2022-alternative)
+    - [Database Setup](#database-setup)
+        - [SQLite Database Default](#sqlite-database-default)
+        - [SQL Server LocalDB Optional](#sql-server-localdb-optional)
+    - [Verification](#verification)
+    - [Troubleshooting](#troubleshooting)
+        - [Common Issues and Solutions](#common-issues-and-solutions)
+        - [Technology Stack Summary](#technology-stack-summary)
+        - [Next Steps](#next-steps)
+
+<!-- /TOC -->
+
 
 <!-- vscode-markdown-toc-config
 	numbering=true

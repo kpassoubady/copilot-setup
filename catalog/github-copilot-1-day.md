@@ -6,7 +6,7 @@
 
 **Audience**: Working professionals (Java/Python/.NET/Data Analysis)
 
-**Tracks**: Java (Spring Boot), Python (FastAPI), .NET (ASP.NET Core), or Python Data Analysis (Pandas) — same 1‑day flow
+**Tracks**: Java (Spring Boot), Python (FastAPI), .NET (ASP.NET Core), or Python Data Analysis (Pandas). All tracks share the same 1-day flow
 
 **Prerequisites**: IDE with GitHub Copilot enabled; basic Git. Choose one track's tooling:
 
@@ -15,13 +15,11 @@
 - .NET Track: .NET 9+ SDK, Entity Framework Core tools
 - Python Data Analysis Track: Python 3.9+, Jupyter Notebook
 
----
 
 ## 🎯 Course Overview
 
-This intensive 1-day program focuses on mastering GitHub Copilot through practical development of a Personal Expense Tracker. You’ll learn Copilot’s capabilities across completion, chat, editing, and context usage—prioritizing AI-assisted development workflows over framework details.
+This intensive 1-day program focuses on mastering GitHub Copilot through practical development of a Personal Expense Tracker. You’ll learn Copilot’s capabilities across completion, chat, editing, and context usage. The course prioritizes AI-assisted development workflows over framework details.
 
----
 
 ## 🧭 Main Topics Covered
 
@@ -53,7 +51,6 @@ This intensive 1-day program focuses on mastering GitHub Copilot through practic
   - VS Code Copilot logs and troubleshooting
   - Restore points and rollback strategies
 
----
 
 ## 📚 Learning Outcomes
 
@@ -63,7 +60,6 @@ This intensive 1-day program focuses on mastering GitHub Copilot through practic
 - Integrate Copilot into daily workflows and GitHub collaboration
 - Understand Copilot’s limits, security, and ethical considerations
 
----
 
 ## 🛠️ Project Context (Technology-Agnostic)
 
@@ -77,7 +73,6 @@ This intensive 1-day program focuses on mastering GitHub Copilot through practic
 
 Note: The course emphasizes Copilot workflows over specific framework training.
 
----
 
 ## 🧩 Track Setup (Install Guides)
 
@@ -85,7 +80,6 @@ Install prerequisites for your chosen track before class by referring to the mai
 
 📄 **[Installation Instructions](../install.md)**
 
----
 
 ## ⏰ 8-Hour Schedule
 
@@ -145,7 +139,6 @@ Install prerequisites for your chosen track before class by referring to the mai
 - Documentation generation patterns with context
 - Personal Copilot workflow blueprint
 
----
 
 ## ✅ Deliverables (End of Day)
 
@@ -153,7 +146,6 @@ Install prerequisites for your chosen track before class by referring to the mai
 - Functional REST endpoints and minimal web UI/templates
 - Documented code using Copilot-assisted explanations and inline comments
 
----
 
 ## 🔧 Copilot Workflow Highlights (Practiced Throughout)
 
@@ -162,7 +154,6 @@ Install prerequisites for your chosen track before class by referring to the mai
 - `@workspace` insights for architecture and consistency
 - Multi-file editing sessions and refactoring assistance
 
----
 
 ## Teaching Philosophy
 

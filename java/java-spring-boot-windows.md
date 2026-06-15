@@ -1,27 +1,35 @@
 # Project 1: Spring Boot Personal Expense Tracker Installation Guide (Windows 11)
 
 <!-- markdownlint-disable MD033 MD029 MD010-->
-<!-- vscode-markdown-toc -->
-- [Project 1: Spring Boot Personal Expense Tracker Installation Guide (Windows 11)](#project-1-spring-boot-expense-tracker-app-installation-guide-windows-11)
-  - [1. Step 1: Install Java Development Kit (JDK)](#1-step-1-install-java-development-kit-jdk)
-    - [1.1. Set JAVA\_HOME Environment Variable](#11-set-java_home-environment-variable)
-  - [2. Step 2: Install Maven](#2-step-2-install-maven)
-    - [2.1. Download and Extract Maven](#21-download-and-extract-maven)
-    - [2.2. Set Maven Environment Variables](#22-set-maven-environment-variables)
-  - [3. Step 3: Install Git](#3-step-3-install-git)
-  - [4. Project Setup](#4-project-setup)
-    - [4.1. Create Project Folder](#41-create-project-folder)
-    - [4.2. Create Spring Boot Full-Stack Project](#42-create-spring-boot-full-stack-project)
-    - [4.3. Update Project Dependencies](#43-update-project-dependencies)
-    - [4.4. Test Project Setup](#44-test-project-setup)
-  - [5. IDE Setup](#5-ide-setup)
-    - [5.1. Visual Studio Code Extensions](#51-visual-studio-code-extensions)
-    - [5.2. IntelliJ IDEA Setup (Alternative)](#52-intellij-idea-setup-alternative)
-  - [6. Database Setup](#6-database-setup)
-    - [6.1. H2 Database (Default)](#61-h2-database-default)
-    - [6.2. PostgreSQL (Optional)](#62-postgresql-optional)
-  - [7. Verification](#7-verification)
-  - [8. Troubleshooting](#8-troubleshooting)
+<!-- TOC -->
+
+- [Project 1: Spring Boot Personal Expense Tracker Installation Guide Windows 11](#project-1-spring-boot-personal-expense-tracker-installation-guide-windows-11)
+    - [Step 1: Install Java Development Kit JDK](#step-1-install-java-development-kit-jdk)
+        - [Set JAVA_HOME Environment Variable](#set-java_home-environment-variable)
+    - [Step 2: Install Maven](#step-2-install-maven)
+        - [Download and Extract Maven](#download-and-extract-maven)
+        - [Set Maven Environment Variables](#set-maven-environment-variables)
+    - [Step 3: Install Git](#step-3-install-git)
+    - [Project Setup](#project-setup)
+        - [Create Project Folder](#create-project-folder)
+        - [Create Spring Boot Full-Stack Project](#create-spring-boot-full-stack-project)
+        - [Update Project Dependencies](#update-project-dependencies)
+        - [Test Project Setup](#test-project-setup)
+    - [IDE Setup](#ide-setup)
+        - [Visual Studio Code Extensions](#visual-studio-code-extensions)
+        - [IntelliJ IDEA Setup Alternative](#intellij-idea-setup-alternative)
+    - [Database Setup](#database-setup)
+        - [H2 Database Default](#h2-database-default)
+        - [PostgreSQL Optional](#postgresql-optional)
+    - [Verification](#verification)
+    - [Troubleshooting](#troubleshooting)
+        - [Common Issues and Solutions](#common-issues-and-solutions)
+        - [Verification Commands](#verification-commands)
+        - [Environment Variables Check](#environment-variables-check)
+        - [Technology Stack Summary](#technology-stack-summary)
+        - [Note](#note)
+
+<!-- /TOC -->
 
 <!-- vscode-markdown-toc-config
 	numbering=true
