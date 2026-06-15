@@ -6,10 +6,12 @@
       "Exec(*)",
       "Exec(!rm*)",
       "Exec(!rmdir*)",
+      "Exec(git *)",
       "Exec(git status)",
       "Exec(git diff)",
       "Exec(git log)",
-      "Exec(git add)"
+      "Exec(git add)",
+      "Exec(git commit)"
     ]
   }
 }
