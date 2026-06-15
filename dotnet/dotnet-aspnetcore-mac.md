@@ -1,8 +1,8 @@
-# Project 3: ASP.NET Core Task Manager Installation Guide (macOS)
+# Project 3: ASP.NET Core Personal Expense Tracker Installation Guide (macOS)
 
 <!-- markdownlint-disable MD033 MD029 MD010-->
 <!-- vscode-markdown-toc -->
-- [Project 3: ASP.NET Core Task Manager Installation Guide (macOS)](#project-3-aspnet-core-task-manager-installation-guide-macos)
+- [Project 3: ASP.NET Core Personal Expense Tracker Installation Guide (macOS)](#project-3-aspnet-core-expense-tracker-app-installation-guide-macos)
   - [1. Step 1: Install .NET SDK](#1-step-1-install-net-sdk)
     - [1.1. Verify Installation](#11-verify-installation)
   - [2. Step 2: Install Entity Framework Core Tools](#2-step-2-install-entity-framework-core-tools)
@@ -104,7 +104,7 @@ If you cloned this repo, use the provided project:
 
 ```bash
 # Navigate to the project directory
-cd project3/task-manager
+cd copilot-companion/projects/expense-tracker/dotnet-aspnetcore/expense-tracker-app
 
 # Restore dependencies
 dotnet restore
@@ -113,11 +113,11 @@ dotnet restore
 dotnet build
 
 # Create database migrations
-dotnet ef migrations add InitialCreate --project src/TaskManager.Web
-dotnet ef database update --project src/TaskManager.Web
+dotnet ef migrations add InitialCreate --project src/ExpenseTracker.Web
+dotnet ef database update --project src/ExpenseTracker.Web
 
 # Run the application
-dotnet run --project src/TaskManager.Web
+dotnet run --project src/ExpenseTracker.Web
 
 # Open http://localhost:5000 or https://localhost:5001
 ```
@@ -127,16 +127,16 @@ dotnet run --project src/TaskManager.Web
 Create the project directory and solution:
 
 ```bash
-mkdir -p project3
-cd project3
+mkdir -p copilot-companion/projects/expense-tracker/dotnet-aspnetcore
+cd copilot-companion/projects/expense-tracker/dotnet-aspnetcore
 
 # Create solution and project
-dotnet new sln -n TaskManager
-dotnet new webapp -n TaskManager.Web -o src/TaskManager.Web
-dotnet sln add src/TaskManager.Web
+dotnet new sln -n ExpenseTracker
+dotnet new webapp -n ExpenseTracker.Web -o src/ExpenseTracker.Web
+dotnet sln add src/ExpenseTracker.Web
 
 # Navigate to project
-cd src/TaskManager.Web
+cd src/ExpenseTracker.Web
 ```
 
 ### 4.3. <a name='InstallNuGetPackages'></a>Install NuGet Packages
@@ -169,7 +169,7 @@ Build and run the application:
 dotnet build
 
 # Run the application
-dotnet run --project src/TaskManager.Web
+dotnet run --project src/ExpenseTracker.Web
 
 # Application should start on:
 # - HTTP:  http://localhost:5000
@@ -234,7 +234,7 @@ Update `appsettings.json`:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Data Source=taskmanager.db"
+    "DefaultConnection": "Data Source=expensetracker.db"
   },
   "Logging": {
     "LogLevel": {
@@ -278,7 +278,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 9.0.0
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=TaskManager;User Id=sa;Password=YourStrong@Password;TrustServerCertificate=True"
+    "DefaultConnection": "Server=localhost;Database=ExpenseTracker;User Id=sa;Password=YourStrong@Password;TrustServerCertificate=True"
   }
 }
 ```
@@ -298,11 +298,11 @@ dotnet ef --version && echo "✓ EF Core Tools OK"
 git --version && echo "✓ Git OK"
 
 # Test project compilation
-cd project3/task-manager
+cd copilot-companion/projects/expense-tracker/dotnet-aspnetcore/expense-tracker-app
 dotnet build && echo "✓ Build OK"
 
 # Run application (Ctrl+C to stop)
-dotnet run --project src/TaskManager.Web
+dotnet run --project src/ExpenseTracker.Web
 ```
 
 Expected access points after starting:
@@ -382,6 +382,6 @@ dotnet dev-certs https --trust
 
 After completing setup:
 
-1. Open the project in VS Code: `code project3/task-manager`
+1. Open the project in VS Code: `code copilot-companion/projects/expense-tracker/dotnet-aspnetcore/expense-tracker-app`
 2. Verify GitHub Copilot is working
-3. Start building the Task Manager application!
+3. Start building the Personal Expense Tracker application!

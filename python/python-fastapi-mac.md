@@ -1,4 +1,4 @@
-# Project 2: Python Task Manager (FastAPI) — macOS Install
+# Project 2: Python Personal Expense Tracker (FastAPI) — macOS Install
 
 This guide sets up a minimal FastAPI app with Jinja2 templates and SQLite on macOS.
 
@@ -17,10 +17,10 @@ pip3 --version
 
 ## 2. Recommended: use the included starter
 
-The repo includes a ready-to-run starter at `project2/task-manager`.
+The repo includes a ready-to-run starter at `copilot-companion/projects/expense-tracker/python-fastapi/expense-tracker-app`.
 
 ```bash
-cd project2/task-manager
+cd copilot-companion/projects/expense-tracker/python-fastapi/expense-tracker-app
 python3 -m venv .venv
 source .venv/bin/activate
 pip3 install -r requirements.txt
@@ -34,7 +34,7 @@ Open `http://127.0.0.1:8000` (docs at `/docs`).
 Create a project folder and venv:
 
 ```bash
-mkdir -p ~/copilot/project2 && cd ~/copilot/project2
+mkdir -p ~/copilot/copilot-companion/projects/expense-tracker/python-fastapi && cd ~/copilot/copilot-companion/projects/expense-tracker/python-fastapi
 python3 -m venv .venv
 source .venv/bin/activate
 ```
@@ -73,7 +73,7 @@ from fastapi.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 import pathlib
 
-app = FastAPI(title="Python Task Manager")
+app = FastAPI(title="Python Personal Expense Tracker")
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
@@ -91,7 +91,7 @@ def health() -> dict:
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "message": "Welcome to Python Task Manager!"})
+    return templates.TemplateResponse("index.html", {"request": request, "message": "Welcome to Python Personal Expense Tracker!"})
 ```
 
 Create `app/templates/index.html`:
@@ -102,11 +102,11 @@ Create `app/templates/index.html`:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Python Task Manager</title>
+    <title>Python Personal Expense Tracker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body class="container py-5">
-    <h1 class="mb-3">Python Task Manager</h1>
+    <h1 class="mb-3">Python Personal Expense Tracker</h1>
     <p class="lead">{{ message }}</p>
   </body>
   </html>

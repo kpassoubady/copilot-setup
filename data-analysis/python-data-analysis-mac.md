@@ -92,8 +92,8 @@ pip3 install virtualenv
 - Create a virtual environment for the project:
 
 ```bash
-mkdir -p copilot/project1
-cd copilot/project1
+mkdir -p copilot/copilot-companion/projects/expense-tracker/java-spring-boot
+cd copilot/copilot-companion/projects/expense-tracker/java-spring-boot
 python3 -m venv data_pipeline_env
 ```
 
