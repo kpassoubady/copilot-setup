@@ -4,6 +4,17 @@
 
 This is a GitHub Copilot 1-Day training course repository that provides installation and setup guides for multiple programming tracks. The repository serves as the central hub for course participants to prepare their development environments before attending the training session.
 
+## Related Repositories
+
+This repository is part of a multi-repo GitHub Copilot training ecosystem:
+
+| Repository | Path | Purpose |
+|------------|------|---------|
+| **copilot-setup** (this repo) | `/Users/kangs/code/github/copilot-setup` | Pre-class setup: installation guides for all tracks and OS platforms |
+| **copilot-advanced** | `/Users/kangs/code/github/copilot-advanced` | Course delivery: exercises, projects, games, curriculum (4 tracks) |
+| **copilot-intro-book** | `/Users/kangs/code/github/copilot-intro-book` | Book + course content: 18 chapters, appendices, exercises, capstone projects |
+| **copilot-companion** | `/Users/kangs/code/github/copilot-companion` | Companion repo: chapter code snippets, exercises with start/solution, capstone projects |
+
 ## Course Tracks
 
 The repository supports four distinct learning tracks:
