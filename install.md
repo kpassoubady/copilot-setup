@@ -9,6 +9,15 @@ Before starting your track-specific installation, please ensure you have install
 - [General Setup: macOS](./generic-install-mac.md)
 - [General Setup: Windows](./generic-install-win.md)
 
+## Clone the Companion Project
+
+Each track's install guide uses a ready-to-run starter project from the companion repository. Clone it before starting your track-specific setup:
+
+```bash
+git clone https://github.com/kpassoubady/copilot-advanced-companion.git
+```
+
+Clone it as a sibling of this repo (i.e. so `copilot-setup` and `copilot-advanced-companion` share the same parent directory). The track guides reference it by that relative path.
 
 ## Track-Specific Setup
 

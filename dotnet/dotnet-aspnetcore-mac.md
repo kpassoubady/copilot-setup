@@ -105,11 +105,11 @@ git --version
 
 ### Quick Start (Recommended)ended'></a>Quick Start (Recommended)
 
-If you cloned this repo, use the provided project:
+If you cloned the [copilot-advanced-companion](https://github.com/kpassoubady/copilot-advanced-companion) repo (per `install.md`), use the provided project:
 
 ```bash
 # Navigate to the project directory
-cd copilot-companion/projects/expense-tracker/dotnet-aspnetcore/expense-tracker-app
+cd copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/dotnet-aspnetcore/expense-tracker-app
 
 # Restore dependencies
 dotnet restore
@@ -118,11 +118,11 @@ dotnet restore
 dotnet build
 
 # Create database migrations
-dotnet ef migrations add InitialCreate --project src/ExpenseTracker.Web
-dotnet ef database update --project src/ExpenseTracker.Web
+dotnet ef migrations add InitialCreate --project src/TaskManager.Web
+dotnet ef database update --project src/TaskManager.Web
 
 # Run the application
-dotnet run --project src/ExpenseTracker.Web
+dotnet run --project src/TaskManager.Web
 
 # Open http://localhost:5000 or https://localhost:5001
 ```
@@ -132,8 +132,8 @@ dotnet run --project src/ExpenseTracker.Web
 Create the project directory and solution:
 
 ```bash
-mkdir -p copilot-companion/projects/expense-tracker/dotnet-aspnetcore
-cd copilot-companion/projects/expense-tracker/dotnet-aspnetcore
+mkdir -p ~/copilot/personal-expense-tracker/dotnet-aspnetcore
+cd ~/copilot/personal-expense-tracker/dotnet-aspnetcore
 
 # Create solution and project
 dotnet new sln -n ExpenseTracker
@@ -303,11 +303,11 @@ dotnet ef --version && echo "✓ EF Core Tools OK"
 git --version && echo "✓ Git OK"
 
 # Test project compilation
-cd copilot-companion/projects/expense-tracker/dotnet-aspnetcore/expense-tracker-app
+cd copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/dotnet-aspnetcore/expense-tracker-app
 dotnet build && echo "✓ Build OK"
 
 # Run application (Ctrl+C to stop)
-dotnet run --project src/ExpenseTracker.Web
+dotnet run --project src/TaskManager.Web
 ```
 
 Expected access points after starting:
@@ -387,6 +387,6 @@ dotnet dev-certs https --trust
 
 After completing setup:
 
-1. Open the project in VS Code: `code copilot-companion/projects/expense-tracker/dotnet-aspnetcore/expense-tracker-app`
+1. Open the project in VS Code: `code copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/dotnet-aspnetcore/expense-tracker-app`
 2. Verify GitHub Copilot is working
 3. Start building the Personal Expense Tracker application!
