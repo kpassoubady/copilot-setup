@@ -2,26 +2,17 @@
 
 ## Project Overview
 
-This is a GitHub Copilot 1-Day training course repository that provides installation and setup guides for multiple programming tracks. The repository serves as the central hub for course participants to prepare their development environments before attending the training session.
+This repository provides installation and setup guides for multiple programming tracks, shared across the GitHub Copilot 1-Day and 2-Day Advanced training courses. It serves as the central hub for course participants to prepare their development environments before attending a training session.
 
-## Related Repositories
-
-This repository is part of a multi-repo GitHub Copilot training ecosystem:
-
-| Repository | Path | Purpose |
-|------------|------|---------|
-| **copilot-setup** (this repo) | `/Users/kangs/code/github/copilot-setup` | Pre-class setup: installation guides for all tracks and OS platforms |
-| **copilot-advanced** | `/Users/kangs/code/github/copilot-advanced` | Course delivery: exercises, projects, games, curriculum (4 tracks) |
-| **copilot-intro-book** | `/Users/kangs/code/github/copilot-intro-book` | Book + course content: 18 chapters, appendices, exercises, capstone projects |
-| **copilot-companion** | `/Users/kangs/code/github/copilot-companion` | Companion repo: chapter code snippets, exercises with start/solution, capstone projects |
+Each course offering gets its own entry-point file, `Welcome-<Course>.md` (`Welcome-1Day.md` for the 1-Day course, `Welcome-Advanced2Day.md` for the 2-Day Advanced course), which links to the matching course catalog and the shared installation guide. Every client attending a given course is pointed at that same entry-point file; the installation guides and course catalogs are not duplicated per client.
 
 ## Course Tracks
 
 The repository supports four distinct learning tracks:
 
-1. **Java Track** - Spring Boot Task Manager web application with H2 database
-2. **Python Track** - FastAPI Task Manager web application with SQLite
-3. **.NET Track** - ASP.NET Core Task Manager web application with SQLite
+1. **Java Track** - Spring Boot Personal Expense Tracker web application with H2 database
+2. **Python Track** - FastAPI Personal Expense Tracker web application with SQLite
+3. **.NET Track** - ASP.NET Core Personal Expense Tracker web application with SQLite
 4. **Python Data Analysis Track** - Data analysis pipeline using Pandas, Matplotlib, and Seaborn
 
 Each track includes OS-specific setup instructions for both macOS and Windows.
@@ -31,12 +22,14 @@ Each track includes OS-specific setup instructions for both macOS and Windows.
 ```
 copilot-setup/
 ├── README.md                          # Quick project overview
-├── Welcome.md                         # Course welcome and checklist
-├── install.md                         # Main installation guide (entry point)
+├── Welcome-1Day.md                    # 1-Day course entry point: welcome and checklist
+├── Welcome-Advanced2Day.md            # 2-Day Advanced course entry point: welcome and checklist
+├── install.md                         # Shared installation guide (all clients, all tracks)
 ├── generic-install-mac.md             # Generic macOS setup
 ├── generic-install-win.md             # Generic Windows setup
 ├── catalog/
-│   └── github-copilot-1-day.md       # Detailed course catalog and schedule
+│   ├── github-copilot-1-day.md       # 1-Day course catalog and schedule
+│   └── github-copilot-advanced-2-day.md # 2-Day Advanced course catalog and schedule
 ├── java/
 │   ├── java-spring-boot-mac.md       # Java track macOS setup
 │   └── java-spring-boot-windows.md   # Java track Windows setup
@@ -56,9 +49,10 @@ copilot-setup/
 
 ## Key Files
 
-- **Welcome.md** - Start here for course overview and pre-class checklist
-- **install.md** - Main entry point for installation instructions
-- **catalog/github-copilot-1-day.md** - Complete course outline and schedule
+- **Welcome-\*.md** - Per-course entry point; start here for course overview and pre-class checklist (`Welcome-1Day.md`, `Welcome-Advanced2Day.md`)
+- **install.md** - Shared entry point for installation instructions, used by every client and course length
+- **catalog/github-copilot-1-day.md** - Complete 1-Day course outline and schedule
+- **catalog/github-copilot-advanced-2-day.md** - Complete 2-Day Advanced course outline and schedule
 - **generic-install-*.md** - OS-specific general setup (IDE, GitHub Copilot extension, etc.)
 - **Track-specific files** - Language/framework-specific setup instructions
 
@@ -95,17 +89,18 @@ This repository uses:
 ## Common Tasks
 
 ### For Course Participants
-1. Read `Welcome.md` for course overview
+1. Read the `Welcome-*.md` entry point you were given (e.g. `Welcome-1Day.md` or `Welcome-Advanced2Day.md`) for course overview
 2. Follow `install.md` for your chosen track
 3. Complete OS-specific setup from track-specific files
 4. Verify all prerequisites are installed
 
 ### For Repository Maintainers
-1. Update course content in `catalog/github-copilot-1-day.md`
-2. Maintain track-specific setup guides
-3. Keep prerequisites and tool versions current
-4. Use custom commands in `.claude/commands/` for documentation updates
-5. Follow markdown linting standards
+1. Update course content in `catalog/github-copilot-1-day.md` or `catalog/github-copilot-advanced-2-day.md`
+2. Adding a new course offering: add a `Welcome-<Course>.md` linking to its catalog and to the shared `install.md`; point every client taking that course at the same file rather than forking one per client
+3. Maintain track-specific setup guides
+4. Keep prerequisites and tool versions current
+5. Use custom commands in `.claude/commands/` for documentation updates
+6. Follow markdown linting standards
 
 ## Recent Changes
 
@@ -119,6 +114,8 @@ Participants encountering setup issues should reach out before the training day.
 
 ## Related Resources
 
-- Course Catalog: `catalog/github-copilot-1-day.md`
-- Installation Guide: `install.md`
-- Welcome & Checklist: `Welcome.md`
+- 1-Day Course Catalog: `catalog/github-copilot-1-day.md`
+- 2-Day Advanced Course Catalog: `catalog/github-copilot-advanced-2-day.md`
+- Installation Guide (shared): `install.md`
+- Welcome & Checklist (1-Day): `Welcome-1Day.md`
+- Welcome & Checklist (2-Day Advanced): `Welcome-Advanced2Day.md`

@@ -64,9 +64,9 @@ This intensive 1-day program focuses on mastering GitHub Copilot through practic
 ## 🛠️ Project Context (Technology-Agnostic)
 
 - Four parallel tracks share the same Copilot curriculum:
-  - **Java Track**: Spring Boot Task Manager (H2 for dev)
-  - **Python Track**: FastAPI Task Manager (SQLite for dev)
-  - **.NET Track**: ASP.NET Core Task Manager (SQLite for dev)
+  - **Java Track**: Spring Boot Personal Expense Tracker (H2 for dev)
+  - **Python Track**: FastAPI Personal Expense Tracker (SQLite for dev)
+  - **.NET Track**: ASP.NET Core Personal Expense Tracker (SQLite for dev)
   - **Python Data Analysis Track**: Data Analysis Pipeline (Pandas, Matplotlib, Seaborn)
 - Frontend: Thymeleaf/Jinja2/Razor templates; Bootstrap for styling (web tracks)
 - Tools: GitHub Copilot (VS Code/IntelliJ/Visual Studio), REST Client (optional), Jupyter Notebook (data analysis)

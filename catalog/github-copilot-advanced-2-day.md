@@ -1,8 +1,8 @@
 # GitHub Copilot - Advanced (2 Sessions × 4 Hours, Delivered Across 2 Days)
 
-Duration: 2 Sessions × 4 Hours (8 hours total, same footprint as the 1-day course, split across 2 days)
+Duration: 2 Sessions × 4 Hours (8 hours total, split across 2 days)
 
-Focus: Intermediate/advanced GitHub Copilot workflows for developers who already use Copilot day-to-day, covering deeper context strategies, custom instructions, agents, tool sets/MCP, and multi-agent workflows. Continuing work on the same Personal Expense Tracker / Task Manager apps.
+Focus: Intermediate/advanced GitHub Copilot workflows for developers who already use Copilot day-to-day, covering deeper context strategies, custom instructions, agents, tool sets/MCP, and multi-agent workflows. Builds a Personal Expense Tracker app (set up via the installation guide) using `github-copilot-helper` and `agent-hub`.
 
 Audience: Working professionals (Java/Python/.NET/Data Analysis) who have used GitHub Copilot for a while and want to move past basic completion into intermediate/advanced workflows
 
@@ -11,7 +11,6 @@ Tracks: Java (Spring Boot), Python (FastAPI), .NET (ASP.NET Core), or Python Dat
 Prerequisites:
 - Prior hands-on experience with GitHub Copilot (completion + basic Chat)
 - Comfort with Git/GitHub and one track's tooling (Java/Maven, Python, .NET, or Jupyter)
-- Completion of the [1-day Foundations course](https://github.com/kpassoubady/github-copilot-1-day.md) or equivalent experience
 
 ## 🗓️ Delivery Model: 1 Course, 2 Cohorts, 2 Days
 
@@ -24,7 +23,7 @@ This is authored as a single 8-hour course, but delivered as two 4-hour sessions
 
 - Each cohort only attends one slot per day (AM or PM) and follows Session 1 → Session 2 across the two days, functionally a 2-day course for that cohort.
 - The instructor delivers the same Session 1 content twice on Day 1, and the same Session 2 content twice on Day 2.
-- Because each session runs standalone in a single sitting, the single 60-minute breakout from the 1-day course is split into two 30-minute breakout parts (Part A / Part B) per session, bracketed by a context/tooling topic. Shorter blocks hold attention better in a repeated, single-pass session.
+- Because each session runs standalone in a single sitting, breakout work is split into two 30-minute parts (Part A / Part B) per session, bracketed by a context/tooling topic. Shorter blocks hold attention better in a repeated, single-pass session.
 
 ## 🎯 Course Overview
 
@@ -39,7 +38,7 @@ This course assumes participants are past the "what is Copilot" stage. It skips 
   - Hash context: `#file`, `#selection`, `#codebase`, `#editor`, `#sym`, `#terminalSelection`, `#terminalLastCommand`
   - Multi-context and progressive context-building strategies
   - Multi-file editing sessions and cross-file consistency
-- Backend & Web Layer Deep Dives (continuing the Task Manager app)
+- Backend & Web Layer Deep Dives (Personal Expense Tracker app)
   - Intermediate backend modeling: custom queries, validation, service-layer business logic, generated unit tests
   - Web layer/API work: REST controllers via `#codebase`, templates, AJAX, API testing workflows
 - Copilot Agents, Tool Sets & MCP
@@ -58,15 +57,15 @@ This course assumes participants are past the "what is Copilot" stage. It skips 
 - Author and scope custom instructions for a repo, a team, or personal use
 - Use Copilot's built-in agents and tool sets/MCP integrations to extend Copilot beyond the editor
 - Install and adapt a reusable Copilot customization repo (`github-copilot-helper`) for your own team
-- Understand and evaluate a multi-agent delivery workflow (`agent-hub`'s factory chain and loop framework) as a pattern for scaling AI-assisted development
-- Continue building the Task Manager app with intermediate-level backend and web-layer work
+- Run `agent-hub`'s multi-agent factory chain and loop framework to drive AI-assisted feature delivery on a real codebase
+- Build out the Personal Expense Tracker app's backend and web layer with intermediate-level work, using `github-copilot-helper` and `agent-hub` as part of that build
 
 ## 🛠️ Project Context (Technology-Agnostic)
 
-- Same four parallel tracks as the 1-day course, continuing the same codebase:
-  - Java Track: Spring Boot Task Manager (H2 for dev)
-  - Python Track: FastAPI Task Manager (SQLite for dev)
-  - .NET Track: ASP.NET Core Task Manager (SQLite for dev)
+- Four parallel tracks share the same starter codebase, set up via the installation guide:
+  - Java Track: Spring Boot Personal Expense Tracker (H2 for dev)
+  - Python Track: FastAPI Personal Expense Tracker (SQLite for dev)
+  - .NET Track: ASP.NET Core Personal Expense Tracker (SQLite for dev)
   - Python Data Analysis Track: Data Analysis Pipeline (Pandas, Matplotlib, Seaborn)
 - Frontend: Thymeleaf/Jinja2/Razor templates; Bootstrap for styling (web tracks)
 - Tools: GitHub Copilot (VS Code/IntelliJ/Visual Studio), REST Client (optional), Jupyter Notebook (data analysis)
@@ -74,7 +73,13 @@ This course assumes participants are past the "what is Copilot" stage. It skips 
   - [`github-copilot-helper`](https://github.com/kpassoubady/github-copilot-helper): reusable Copilot instructions/prompts/rules/agents/skills/hooks
   - [`agent-hub`](https://github.com/kpassoubady/agent-hub): multi-agent factory chain + loop framework for Claude Code / GitHub Copilot workflows
 
-Note: As in the 1-day course, the emphasis is on Copilot workflows, not framework details. Participants are expected to already be comfortable with their track's basics.
+Note: The emphasis is on Copilot workflows, not framework details. Participants are expected to already be comfortable with their track's basics.
+
+## 🧩 Track Setup (Install Guides)
+
+Install prerequisites for your chosen track before class by referring to the main installation guide:
+
+📄 **[Installation Instructions](../install.md)**
 
 ## ⏰ Session 1 (Day 1, 4 Hours): Context Mastery, Backend Deep Dive & `github-copilot-helper`
 
@@ -113,7 +118,7 @@ Delivered once for the morning cohort and once (repeated) for the afternoon coho
 ### 6. [`github-copilot-helper`](https://github.com/kpassoubady/github-copilot-helper) Showcase: Reusable Instructions, Prompts, Agents & Skills (40 min)
 - Repo walkthrough: `instructions/`, `prompts/`, `rules/`, `agents/`, `skills/`, `hooks/`, `templates/`
 - Live demo: global install (`install.sh -g`) vs. project install, module selection (`-m`)
-- Applying a rule and a custom agent live against the Task Manager project
+- Applying a rule and a custom agent live against the Personal Expense Tracker project
 - Discussion: adapting the repo's conventions to your own team's standards
 
 ### Kahoot 2 (10 min)
@@ -183,7 +188,7 @@ Delivered once for the morning cohort and once (repeated) for the afternoon coho
 - Consolidating Session 1 + 2 into a personal workflow blueprint
 - Where `github-copilot-helper` and `agent-hub` patterns fit into day-to-day work
 
-Session 2 Deliverable: Complete web layer (REST endpoints, templates) built with intermediate context strategies; working understanding of `agent-hub`'s multi-agent factory chain as a pattern for scaling AI-assisted delivery.
+Session 2 Deliverable: Complete web layer (REST endpoints, templates) built with intermediate context strategies; hands-on run of `agent-hub`'s multi-agent factory chain as a pattern for scaling AI-assisted delivery.
 
 ## 🕒 Session Breakdown Table
 
@@ -232,7 +237,7 @@ Combined Total Duration: 8 hours (480 minutes) across 2 sessions / 2 days, run t
 - Backend layer extended with intermediate validation, custom queries, and generated unit tests
 - Complete web layer: REST endpoints, templates, and AJAX where applicable
 - `github-copilot-helper` installed and adapted to a personal or team repo
-- Working familiarity with `agent-hub`'s factory chain and loop framework as a multi-agent delivery pattern
+- Hands-on run of `agent-hub`'s factory chain and loop framework as a multi-agent delivery pattern
 - A personal/team Copilot workflow blueprint combining context strategy, custom instructions, and reusable tooling
 
 ## 🔧 Copilot Workflow Highlights (Practiced Throughout)
@@ -246,6 +251,5 @@ Combined Total Duration: 8 hours (480 minutes) across 2 sessions / 2 days, run t
 ## Teaching Philosophy
 
 - Assume Copilot fluency; spend time on judgment (when to use which mode/context/agent), not basics
-- Two identical single-pass sessions per day (AM/PM cohorts) keep instructor prep low while covering two full cohorts
 - Live showcases of real, reusable tooling repos ([`github-copilot-helper`](https://github.com/kpassoubady/github-copilot-helper), [`agent-hub`](https://github.com/kpassoubady/agent-hub)) over slideware
-- Continue the same Task Manager codebase from the 1-day course so context-building compounds
+- Use the same Personal Expense Tracker starter codebase throughout both sessions so context-building compounds

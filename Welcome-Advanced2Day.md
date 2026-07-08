@@ -12,7 +12,7 @@ Review the course outline and schedule here: 📄 [Course Catalog - GitHub Copil
 
 Please complete the installation for your chosen track before the training session: 📄 [Installation Instructions](https://github.com/kpassoubady/copilot-setup/blob/main/install.md)
 
-**Choose your track:**
+Choose your track:
 
 | Track                          | Project                   | Description                      |
 | ------------------------------ | ------------------------- | -------------------------------- |
@@ -21,7 +21,7 @@ Please complete the installation for your chosen track before the training sessi
 | **.NET Track**                 | ASP.NET Core Task Manager | Web application with SQLite      |
 | **Python Data Analysis Track** | Data Analysis Pipeline    | Pandas, Matplotlib, Seaborn      |
 
-The installation guide includes OS-specific instructions for both **Windows** and **macOS**.
+The installation guide includes OS-specific instructions for both Windows and macOS.
 
 
 ## ✅ Checklist Before Class
@@ -57,4 +57,4 @@ The installation guide includes OS-specific instructions for both **Windows** an
 If you encounter any issues during setup, please don't hesitate to reach out before the training day.
 
 
-**Looking forward to seeing you in class!** 🚀
+Looking forward to seeing you in class! 🚀

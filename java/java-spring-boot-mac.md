@@ -141,11 +141,11 @@ git --version
 
 ### 4.1. <a name='CreateProjectFolder'></a>Create Project Folder
 
-> Quick start (recommended if you cloned this repo):
+> Quick start (recommended if you cloned the [copilot-advanced-companion](https://github.com/kpassoubady/copilot-advanced-companion) repo, per `install.md`):
 >
 > ```bash
 > # Use the provided Spring Boot project
-> cd copilot-companion/projects/expense-tracker/java-spring-boot/expense-tracker-app
+> cd copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/java-spring-boot/expense-tracker-app
 > mvn clean compile
 > mvn spring-boot:run
 > ```
@@ -155,8 +155,8 @@ git --version
 Create the main project directory:
 
 ```bash
-mkdir -p copilot-companion/projects/expense-tracker/java-spring-boot
-cd copilot-companion/projects/expense-tracker/java-spring-boot
+mkdir -p ~/copilot/personal-expense-tracker/java-spring-boot
+cd ~/copilot/personal-expense-tracker/java-spring-boot
 ```
 
 ### 4.2. <a name='CreateSpringBootFull-StackProject'></a>Create Spring Boot Full-Stack Project
@@ -574,7 +574,7 @@ Verify your complete setup:
 
 2. **Project Structure**:
    ```bash
-   cd copilot-companion/projects/expense-tracker/java-spring-boot
+   cd copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/java-spring-boot
    ls -la
    ```
    
@@ -635,7 +635,7 @@ mvn -version && echo "✓ Maven OK"
 git --version && echo "✓ Git OK"
 
 # Test application compilation
-cd copilot-companion/projects/expense-tracker/java-spring-boot/expense-tracker-app
+cd copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/java-spring-boot/expense-tracker-app
 mvn clean compile && echo "✓ Compilation OK"
 ```
 

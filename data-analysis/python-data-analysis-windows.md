@@ -94,9 +94,17 @@ pip install virtualenv
 2.2. Create a Virtual Environment
 Create a project directory:
 
+If you cloned the [copilot-advanced-companion](https://github.com/kpassoubady/copilot-advanced-companion) repo (per `install.md`), use the provided project:
+
 ```bash
-mkdir copilot\copilot-companion/projects/expense-tracker/java-spring-boot
-cd copilot\copilot-companion/projects/expense-tracker/java-spring-boot
+cd copilot-advanced-companion\capstone-2-data-analysis\data-pipeline
+```
+
+Otherwise, create a project folder from scratch:
+
+```bash
+mkdir %USERPROFILE%\copilot\personal-expense-tracker\data-pipeline
+cd %USERPROFILE%\copilot\personal-expense-tracker\data-pipeline
 ```
 
 Create a virtual environment:
@@ -116,7 +124,7 @@ data_pipeline_env\Scripts\activate
 Create a `requirements.txt` file with the following content:
 
 > [!TIP]
-> If you clone the project, this file is already provided. You can copy or drag and drop it.
+> If you cloned [copilot-advanced-companion](https://github.com/kpassoubady/copilot-advanced-companion), this file is already provided in `capstone-2-data-analysis\data-pipeline\`. You can copy or drag and drop it instead of creating it manually.
 >
 
 ```text
@@ -156,7 +164,7 @@ pip list | findstr jupyter
 Create a new Python script to test your environment:
 
 > [!TIP]
-> If you clone the project, this file is already provided. You can copy or drag and drop it.
+> If you cloned [copilot-advanced-companion](https://github.com/kpassoubady/copilot-advanced-companion), this file is already provided at `capstone-2-data-analysis\data-pipeline\src\test_pipeline.py`. You can copy or drag and drop it instead of creating it manually.
 >
 
 ```bash
