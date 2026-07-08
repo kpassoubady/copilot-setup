@@ -29,10 +29,10 @@ pip3 --version
 
 ## 2. Recommended: use the included starter
 
-The [copilot-advanced-companion](https://github.com/kpassoubady/copilot-advanced-companion) repo (cloned per `install.md`) includes a ready-to-run starter at `copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/python-fastapi/expense-tracker-app`.
+The [python-expense-tracker](https://github.com/kpassoubady/python-expense-tracker) repo (cloned per `install.md`) includes a ready-to-run starter project.
 
 ```bash
-cd copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/python-fastapi/expense-tracker-app
+cd python-expense-tracker
 python3 -m venv .venv
 source .venv/bin/activate
 pip3 install -r requirements.txt
