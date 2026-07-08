@@ -9,15 +9,25 @@ Before starting your track-specific installation, please ensure you have install
 - [General Setup: macOS](./generic-install-mac.md)
 - [General Setup: Windows](./generic-install-win.md)
 
-## Clone the Companion Project
+## Clone the Starter Project
 
-Each track's install guide uses a ready-to-run starter project from the companion repository. Clone it before starting your track-specific setup:
+Each track's install guide uses a ready-to-run starter project. Clone the repo for your track before starting your track-specific setup — as a sibling of this repo (i.e. so `copilot-setup` and the starter repo share the same parent directory), since the track guides reference it by that relative path:
 
 ```bash
+# Java Track
+git clone https://github.com/kpassoubady/java-personal-expense-tracker.git
+
+# Python Track
+git clone https://github.com/kpassoubady/python-expense-tracker.git
+
+# .NET Track
+git clone https://github.com/kpassoubady/dot-net-expense-tracker.git
+
+# Python Data Analysis Track
 git clone https://github.com/kpassoubady/copilot-advanced-companion.git
 ```
 
-Clone it as a sibling of this repo (i.e. so `copilot-setup` and `copilot-advanced-companion` share the same parent directory). The track guides reference it by that relative path.
+You only need to clone the repo for your own track.
 
 ## Track-Specific Setup
 

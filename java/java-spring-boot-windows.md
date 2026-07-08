@@ -145,11 +145,11 @@ git --version
 
 ### 4.1. <a name='CreateProjectFolder'></a>Create Project Folder
 
-> Quick start (recommended if you cloned the [copilot-advanced-companion](https://github.com/kpassoubady/copilot-advanced-companion) repo, per `install.md`):
+> Quick start (recommended if you cloned the [java-personal-expense-tracker](https://github.com/kpassoubady/java-personal-expense-tracker) repo, per `install.md`):
 >
 > ```cmd
 > REM Use the provided Spring Boot project
-> cd copilot-advanced-companion\capstone-1-expense-tracker\expense-tracker\java-spring-boot\expense-tracker-app
+> cd java-personal-expense-tracker
 > mvn clean compile
 > mvn spring-boot:run
 > ```
@@ -576,16 +576,15 @@ Verify your complete setup by running these commands in Command Prompt:
 
 3. **Project Structure**:
    ```cmd
-   cd copilot-advanced-companion/capstone-1-expense-tracker/expense-tracker/java-spring-boot
+   cd java-personal-expense-tracker
    dir
    ```
    
    You should see:
-   - `expense-tracker-app\` (Spring Boot full-stack project)
+   - `pom.xml`, `src\` (Spring Boot full-stack project)
 
 4. **Dependencies**:
    ```cmd
-   cd expense-tracker-app
    mvn dependency:tree
    ```
 
@@ -643,7 +642,7 @@ REM Check Git
 git --version && echo Git OK
 
 REM Test application compilation
-cd copilot-advanced-companion\capstone-1-expense-tracker\expense-tracker\java-spring-boot\expense-tracker-app
+cd java-personal-expense-tracker
 mvn clean compile && echo Compilation OK
 ```
 
