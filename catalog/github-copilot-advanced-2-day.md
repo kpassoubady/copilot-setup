@@ -11,7 +11,7 @@
 **Prerequisites**:
 - Prior hands-on experience with GitHub Copilot (completion + basic Chat)
 - Comfort with Git/GitHub and one track's tooling (Java/Maven, Python, .NET, or Jupyter)
-- Completion of the [1-day Foundations course](github-copilot-1-day.md) or equivalent experience
+- Completion of the [1-day Foundations course](https://github.com/kpassoubady/github-copilot-1-day.md) or equivalent experience
 
 ---
 
