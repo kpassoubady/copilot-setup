@@ -39,3 +39,19 @@ Click on the links below to view the detailed instructions for your chosen platf
 | Python Track    | [Windows](./python/python-fastapi-windows.md) | [macOS](./python/python-fastapi-mac.md) | Project 2: Python Personal Expense Tracker (FastAPI)                                    |
 | .NET Track      | [Windows](./dotnet/dotnet-aspnetcore-windows.md) | [macOS](./dotnet/dotnet-aspnetcore-mac.md) | Project 3: ASP.NET Core Personal Expense Tracker                                        |
 | Python Data Analysis Track | [Windows](./data-analysis/python-data-analysis-windows.md) | [macOS](./data-analysis/python-data-analysis-mac.md) | Project 4: Data Analysis Pipeline with Pandas                               |
+
+## Starter Project Repositories
+
+Direct links to each track's starter repo on GitHub:
+
+- Java Track: https://github.com/kpassoubady/java-personal-expense-tracker
+- Python Track: https://github.com/kpassoubady/python-expense-tracker
+- .NET Track: https://github.com/kpassoubady/dot-net-expense-tracker
+- Python Data Analysis Track: https://github.com/kpassoubady/copilot-advanced-companion
+
+## Additional Course Tools (Installed Later in the Course)
+
+These two repos are covered later in the course, in dedicated showcase sessions — no need to install them now. They're plain Markdown collections (instructions, prompts, agents, skills) with their own `install.sh`/`install.ps1` scripts, so setup only takes a minute when you get to that part of the course. Listed here upfront so you know what's coming:
+
+- [github-copilot-helper](https://github.com/kpassoubady/github-copilot-helper) — Portable GitHub Copilot customizations (instructions, prompts, rules, agents) you can install globally or per-project.
+- [agent-hub](https://github.com/kpassoubady/agent-hub) — Reusable Claude Code agents, skills, and rules (including the `feature-factory` skill) that work across any project.
