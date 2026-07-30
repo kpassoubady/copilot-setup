@@ -5,7 +5,7 @@ To ensure a smooth and productive learning experience, please complete the setup
 
 ## 📋 Course Overview
 
-Review the course outline and schedule here: 📄 [Course Catalog - GitHub Copilot Advanced 2-Day](https://github.com/kpassoubady/copilot-setup/blob/main/catalog/github-copilot-advanced-2-day.md)
+Review the course outline and schedule here: 📄 [Course Catalog - GitHub Copilot Advanced 2-Day](https://github.com/kpassoubady/copilot-setup/blob/main/catalog/github-copilot-advanced-2-day-am-pm.md)
 
 
 ## 🛠️ Pre-Class Setup (Required)
