@@ -39,7 +39,7 @@
 
 ## 1. <a name='Step1:InstallJavaDevelopmentKitJDK'></a>Step 1: Install Java Development Kit (JDK)
 
-Download and install Java 17 or higher (recommended: JDK 21).
+Download and install JDK 21, which is required by the starter project.
 
 1. **Download JDK**:
    - Visit [Oracle Java Downloads](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html) or [OpenJDK](https://jdk.java.net/21/) - [Archive](https://jdk.java.net/archive/) or [Adoptium](https://adoptium.net/)
@@ -601,7 +601,7 @@ Verify your complete setup by running these commands in Command Prompt:
 
 1. **Java Version Issues**:
    - Ensure JAVA_HOME points to the correct JDK installation
-   - Verify Java 17+ is installed
+   - Verify JDK 21 is installed
    - Restart Command Prompt after setting environment variables
 
 2. **Maven Issues**:

@@ -36,9 +36,7 @@
 
 ## 1. <a name='InstallPythononWindows'></a>1. Install Python (on Windows)
 
-Download Python from the official Python website: [Python Downloads](https://www.python.org/downloads/release/python-3128/).
-
-TensorFlow only works with Python 3.9 to 3.12. You need to install 64 bit python windows.
+Download a supported 64-bit Python release from the official [Python Downloads](https://www.python.org/downloads/) page. Python 3.9 or later is required.
 
 - Run the installer and check the box to **add Python to PATH** before installing.
 - Select "Customize installation" and ensure **pip** is selected for installation.
