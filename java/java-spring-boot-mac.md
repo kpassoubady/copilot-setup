@@ -37,7 +37,7 @@
 
 ## 1. <a name='Step1:InstallJavaDevelopmentKitJDK'></a>Step 1: Install Java Development Kit (JDK)
 
-Open the terminal and install OpenJDK 17 or higher (recommended: JDK 21)
+Open the terminal and install JDK 21, which is required by the starter project:
 
 ```bash
 brew install openjdk@21
@@ -599,7 +599,7 @@ Verify your complete setup:
 
 1. **Java Version Issues**:
    - Ensure JAVA_HOME is set correctly
-   - Verify Java 17+ is installed
+   - Verify JDK 21 is installed
    - Check Maven is using the correct Java version
 
 2. **Port Conflicts**:

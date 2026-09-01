@@ -15,7 +15,7 @@
         - [Test Project SetupctSetup'>Test Project Setup](#test-project-setupctsetuptest-project-setup)
     - [IDE SetupIDESetup'>IDE Setup](#ide-setupidesetupide-setup)
         - [Visual Studio Code Extensionsnsions'>Visual Studio Code Extensions](#visual-studio-code-extensionsnsionsvisual-studio-code-extensions)
-        - [Visual Studio for Mac Alternativeive'>Visual Studio for Mac Alternative](#visual-studio-for-mac-alternativeivevisual-studio-for-mac-alternative)
+        - [JetBrains Rider Alternativeive'>JetBrains Rider Alternative](#jetbrains-rider-alternativeivejetbrains-rider-alternative)
     - [Database SetupaseSetup'>Database Setup](#database-setupasesetupdatabase-setup)
         - [SQLite Database Defaultfault'>SQLite Database Default](#sqlite-database-defaultfaultsqlite-database-default)
         - [SQL Server Optionalional'>SQL Server Optional](#sql-server-optionalionalsql-server-optional)
@@ -34,25 +34,25 @@
 
 ## Step 1: Install .NET SDKTSDK'></a>Step 1: Install .NET SDK
 
-Install .NET 9+ SDK using Homebrew:
+Install the .NET 10 SDK using Homebrew:
 
 ```bash
 brew install --cask dotnet-sdk
 ```
 
-Alternatively, download from [Microsoft .NET Downloads](https://dotnet.microsoft.com/download/dotnet/9.0).
+Alternatively, download it from [Microsoft .NET Downloads](https://dotnet.microsoft.com/download/dotnet/10.0).
 
 ### Verify Installationallation'></a>Verify Installation
 
 ```bash
 dotnet --version
-# Expected: 9.0.x or higher
+# Expected: 10.0.x
 
 dotnet --list-sdks
-# Should show .NET 9.0+ SDK installed
+# Should show a .NET 10.0 SDK
 ```
 
-Add .NET tools to your PATH (if not already):
+Add .NET tools to your PATH if needed:
 
 ```bash
 echo 'export PATH="$PATH:$HOME/.dotnet/tools"' >> ~/.zshrc
@@ -61,23 +61,23 @@ source ~/.zshrc
 
 ## Step 2: Install Entity Framework Core Toolsols'></a>Step 2: Install Entity Framework Core Tools
 
-Install EF Core CLI tools globally:
+Install the EF Core 10 CLI tools globally:
 
 ```bash
-dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-ef --version "10.*"
 ```
 
-If already installed, update to the latest version:
+If an earlier version is already installed, update it:
 
 ```bash
-dotnet tool update --global dotnet-ef
+dotnet tool update --global dotnet-ef --version "10.*"
 ```
 
 Verify installation:
 
 ```bash
 dotnet ef --version
-# Expected: Entity Framework Core .NET Command-line Tools 9.x.x
+# Expected: Entity Framework Core .NET Command-line Tools 10.x.x
 ```
 
 ## Step 3: Install GitallGit'></a>Step 3: Install Git
@@ -148,9 +148,9 @@ cd src/ExpenseTracker.Web
 
 ```bash
 # Entity Framework Core with SQLite
-dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 9.0.0
-dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.0
-dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.0
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 10.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 10.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 10.0.1
 
 # Validation
 dotnet add package FluentValidation.AspNetCore --version 11.3.0
@@ -220,13 +220,9 @@ Alternatively, install via VS Code marketplace:
 3. **REST Client** - API testing within VS Code
 4. **NuGet Gallery** - Package management
 
-### Visual Studio for Mac (Alternative)ive'></a>Visual Studio for Mac (Alternative)
+### JetBrains Rider (Alternative)ive'></a>JetBrains Rider (Alternative)
 
-If using Visual Studio for Mac:
-
-1. Download from [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
-2. Install with ASP.NET and web development workload
-3. Install GitHub Copilot extension from Extensions Manager
+Visual Studio for Mac was retired on August 31, 2024. If you prefer a full IDE instead of VS Code, use a current version of [JetBrains Rider](https://www.jetbrains.com/rider/), install the GitHub Copilot plugin, and sign in with your GitHub account.
 
 ## Database SetupaseSetup'></a>Database Setup
 
@@ -277,7 +273,7 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YourStrong@Password" \
 Update packages and connection string:
 
 ```bash
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 9.0.0
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 10.0.1
 ```
 
 ```json
@@ -336,9 +332,9 @@ brew reinstall --cask dotnet-sdk
 # Ensure tools are in PATH
 export PATH="$PATH:$HOME/.dotnet/tools"
 
-# Reinstall tools
+# Reinstall EF Core 10 tools
 dotnet tool uninstall --global dotnet-ef
-dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-ef --version "10.*"
 ```
 
 **3. Port Already in Use**
@@ -376,7 +372,7 @@ dotnet dev-certs https --trust
 ### Technology Stack Summary
 
 - **Framework**: ASP.NET Core 10.0
-- **ORM**: Entity Framework Core 9.0
+- **ORM**: Entity Framework Core 10.0
 - **Database**: SQLite (development) / SQL Server (optional)
 - **Frontend**: Razor Pages + Bootstrap 5.3
 - **Validation**: FluentValidation

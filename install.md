@@ -1,29 +1,53 @@
 # Installation Instructions
 
-This document provides the installation instructions for all projects in this GitHub Copilot course.
+Complete the general setup, then install the prerequisites for one course track. You only need to clone the repository used by your selected track.
 
-## General Prerequisites
+## 1. Complete the General Setup
 
-Before starting your track-specific installation, please ensure you have installed Git, your preferred IDE (Visual Studio Code or IntelliJ IDEA), and GitHub Copilot. Click on the link for your operating system to view the detailed setup guide:
+Install Git, a supported IDE, and GitHub Copilot by following the guide for your operating system:
 
 - [General Setup: macOS](./generic-install-mac.md)
 - [General Setup: Windows](./generic-install-win.md)
 
+Confirm that both Copilot inline suggestions and Copilot Chat work before continuing.
 
-You only need to clone the repo for your own track.
+## 2. Choose One Track
 
-            |
+| Track | Starter repository | macOS guide | Windows guide |
+| ----- | ------------------ | ----------- | ------------- |
+| Java | [java-personal-expense-tracker](https://github.com/kpassoubady/java-personal-expense-tracker) | [Java for macOS](./java/java-spring-boot-mac.md) | [Java for Windows](./java/java-spring-boot-windows.md) |
+| Python | [python-expense-tracker](https://github.com/kpassoubady/python-expense-tracker) | [Python for macOS](./python/python-fastapi-mac.md) | [Python for Windows](./python/python-fastapi-windows.md) |
+| .NET | [dot-net-expense-tracker](https://github.com/kpassoubady/dot-net-expense-tracker) | [.NET for macOS](./dotnet/dotnet-aspnetcore-mac.md) | [.NET for Windows](./dotnet/dotnet-aspnetcore-windows.md) |
+| Python Data Analysis | [copilot-advanced-companion](https://github.com/kpassoubady/copilot-advanced-companion) | [Data Analysis for macOS](./data-analysis/python-data-analysis-mac.md) | [Data Analysis for Windows](./data-analysis/python-data-analysis-windows.md) |
 
-## Starter Project Repositories
+## 3. Clone the Selected Starter Repository
 
-Direct links to each track's starter repo on GitHub:
+### Java
 
-- Java : https://github.com/kpassoubady/java-personal-expense-tracker
+```bash
+git clone https://github.com/kpassoubady/java-personal-expense-tracker.git
+cd java-personal-expense-tracker
+```
 
+### Python
 
-## Additional Course Tools (Installed Later in the Course)
+```bash
+git clone https://github.com/kpassoubady/python-expense-tracker.git
+cd python-expense-tracker
+```
 
-These two repos are covered later in the course, in dedicated showcase sessions — no need to install them now. They're plain Markdown collections (instructions, prompts, agents, skills) with their own `install.sh`/`install.ps1` scripts, so setup only takes a minute when you get to that part of the course. Listed here upfront so you know what's coming:
+### .NET
 
-- [github-copilot-helper](https://github.com/kpassoubady/github-copilot-helper) — Portable GitHub Copilot customizations (instructions, prompts, rules, agents) you can install globally or per-project.
-- [agent-hub](https://github.com/kpassoubady/agent-hub) — Reusable Claude Code agents, skills, and rules (including the `feature-factory` skill) that work across any project.
+```bash
+git clone https://github.com/kpassoubady/dot-net-expense-tracker.git
+cd dot-net-expense-tracker
+```
+
+### Python Data Analysis
+
+```bash
+git clone https://github.com/kpassoubady/copilot-advanced-companion.git
+cd copilot-advanced-companion/capstone-2-data-analysis/data-pipeline
+```
+
+After cloning, follow the OS-specific track guide in the table above and complete all of its verification steps.

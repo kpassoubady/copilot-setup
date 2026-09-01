@@ -46,7 +46,7 @@
 
 ### Install PythonllPython'></a>Install Python
 
-Ensure Python 3 is installed (preferably version 3.8 or higher).
+Ensure Python 3.9 or later is installed.
 
 #### Install Python using Homebrewmebrew'></a>Install Python using Homebrew
 

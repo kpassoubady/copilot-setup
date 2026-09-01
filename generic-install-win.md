@@ -1,70 +1,79 @@
 # General Setup: Windows
 
-This guide walks through the general development environment setup on Windows 10/11 for this GitHub Copilot course, focusing on Git, Visual Studio Code (VSC), and GitHub Copilot. If you prefer to use IntelliJ IDEA, instructions are also provided.
+This guide installs the shared tools required for the GitHub Copilot course: Git, a supported IDE, and GitHub Copilot on Windows 10 or 11.
 
+## 1. Install and Configure Git
 
-## 1. Install Git
+Download Git from <https://git-scm.com/download/win> and install it with the default options.
 
-Download from <https://git-scm.com/download/win> and install with default options.
-
-Verify in Command Prompt or PowerShell:
+Open a new Command Prompt or PowerShell window and verify:
 
 ```cmd
 git --version
 ```
 
-Configure (use your name and email):
+Check whether your Git identity is already configured:
+
+```cmd
+git config --global --get user.name
+git config --global --get user.email
+```
+
+If either value is missing or incorrect, configure it using your own name and email:
 
 ```cmd
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
+## 2. Install Visual Studio Code
 
-## 2. Install Visual Studio Code (Recommended)
+Visual Studio Code is recommended for all tracks. Download it from <https://code.visualstudio.com/download> and install it.
 
-Download from <https://code.visualstudio.com/download> and install.
+During installation:
 
-**During installation:**
+- Select **Add to PATH**.
+- Select **Register Code as an editor for supported file types**.
 
-- Check **"Add to PATH"**
-- Check **"Register Code as an editor for supported file types"**
-
-Verify:
+Open a new Command Prompt or PowerShell window and verify:
 
 ```cmd
 code --version
 ```
 
+## 3. Set Up GitHub Copilot in Visual Studio Code
 
-## 3. Install IntelliJ IDEA (Alternative)
+1. Open the latest version of VS Code.
+2. Select the Copilot icon in the status bar.
+3. Select **Use AI Features**.
+4. Sign in with the GitHub account that has Copilot access. Copilot Free, an individual plan, or organization-provided access can be used.
+5. Follow any authorization prompts. VS Code installs the required Copilot extensions automatically.
 
-If you prefer using JetBrains IDEs:
-Download IntelliJ IDEA (Community or Ultimate) from <https://www.jetbrains.com/idea/download/> and install it.
-
-
-## 4. GitHub Copilot Setup
-
-### Option A: Visual Studio Code
-
-Install the GitHub Copilot extensions from the Extensions panel (`Ctrl+Shift+X`) or via CLI:
+If automatic setup does not work, install the extensions from the Extensions view (`Ctrl+Shift+X`) or run:
 
 ```cmd
 code --install-extension GitHub.copilot
 code --install-extension GitHub.copilot-chat
 ```
 
-- Sign in with your GitHub account that has an active Copilot license.
-- Verify: open VS Code, type a comment in a file. Copilot should suggest completions.
+### Verify Copilot
 
-### Option B: IntelliJ IDEA
+1. Open or create a source-code file and type a descriptive comment. Confirm that Copilot offers an inline suggestion.
+2. Open the Chat view, enter `Explain what a REST API is in two sentences`, and confirm that Copilot responds without an authentication or policy error.
 
-1. Open IntelliJ IDEA.
-2. Go to **File > Settings** (`Ctrl + Alt + S`).
-3. Select **Plugins** from the left menu.
-4. Click on the **Marketplace** tab and search for **GitHub Copilot**.
-5. Click **Install** and restart the IDE if prompted.
-6. Click the GitHub Copilot icon in the status bar or tool window to sign in to your GitHub account.
+## 4. IntelliJ IDEA Alternative
 
+Java learners may use IntelliJ IDEA instead of VS Code:
 
-> **Next Steps:** Once your general environment is set up, proceed to the track-specific installation guide for your chosen project language (Java, Python, .NET, etc.) from the main installation page.
+1. Download IntelliJ IDEA Community or Ultimate from <https://www.jetbrains.com/idea/download/>.
+2. Open **File > Settings** (`Ctrl+Alt+S`).
+3. Select **Plugins**, open **Marketplace**, and search for **GitHub Copilot**.
+4. Install the plugin and restart IntelliJ IDEA if prompted.
+5. Open **Tools > GitHub Copilot > Login to GitHub** and complete authentication.
+6. Verify both an inline suggestion and a Chat response.
+
+.NET learners who prefer Visual Studio may use a current Visual Studio 2022 release with the ASP.NET and web development workload. Copilot is included as a built-in component in Visual Studio 2022 version 17.10 and later.
+
+## Next Step
+
+Choose one course track and follow its OS-specific instructions from the [main installation page](./install.md).
